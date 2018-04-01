@@ -100,10 +100,10 @@ namespace SFS
             return this.bonus;
         }
 
-        public int ageCalculator(int currentYear)
+        public int ageCalculator()
         {
 
-            return currentYear - getDateOfBirth();
+            return 2018 - getDateOfBirth();
         }
         public virtual void displayInfo()
         {
