@@ -10,17 +10,19 @@ namespace SFS
     {
         string place;
         List<Team> teamList;
-       // List<Results> teamResults;
+        int results;
         public Championships()
         {
             place = "";
             teamList = new List<Team>();
-           // teamResults = new List<Results>();
+            results = 0;
            
         }
-        public Championships(string placee)
+        public Championships(string placee,int Results)
         {
             place = placee;
+            results = Results;
+            
         }
         public void setPlace(string place)
         {
@@ -29,6 +31,14 @@ namespace SFS
         public string GetPlace()
         {
             return this.place;
+        }
+        public void setresults(int results)
+        {
+            this.results = results;
+        }
+        public int Getresults()
+        {
+            return this.results;
         }
 
     }
