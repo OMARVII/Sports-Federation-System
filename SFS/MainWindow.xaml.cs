@@ -22,6 +22,9 @@ namespace SFS
     {
         public MainWindow()
         {
+            Login l = new Login();
+            l.Show();
+            this.Hide();
             InitializeComponent();
         }
     }

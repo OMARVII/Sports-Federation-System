@@ -25,3 +25,19 @@ C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.Prope
 C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
 C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.exe
 C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\bin\Debug\SFS.exe.config
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.exe
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\Login.g.cs
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\MainWindow.g.cs
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\App.g.cs
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.cache
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.lref
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\bin\Debug\SFS.exe
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\bin\Debug\SFS.pdb
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\Login.baml
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\MainWindow.baml
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.g.resources
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.Properties.Resources.resources
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
