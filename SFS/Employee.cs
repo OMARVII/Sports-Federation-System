@@ -66,15 +66,13 @@ namespace SFS
         {
             return this.department;
         }
-        public int Working_year_calc( int  working_year)
+        public int Working_year_calc()
         {
             int current_year = 2018;
             int years;
             years= current_year - working_year;
             return years;
-
         }
-  
-      
+ 
     }
 }
