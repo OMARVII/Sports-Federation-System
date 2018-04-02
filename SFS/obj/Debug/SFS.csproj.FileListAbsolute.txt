@@ -25,6 +25,7 @@ C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.Prope
 C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
 C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.exe
 C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
+<<<<<<< HEAD
 \\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\bin\Debug\SFS.exe.config
 \\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.exe
 \\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
@@ -41,3 +42,5 @@ C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
 \\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.g.resources
 \\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.Properties.Resources.resources
 \\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
+=======
+>>>>>>> cf3b90957e07fecb8aed5ee2c57784dc8f5d89da
