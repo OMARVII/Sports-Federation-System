@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿SFS
 
 
@@ -18,3 +19,25 @@ MainWindow.xaml;
 
 True
 
+=======
+﻿SFS
+
+
+winexe
+C#
+.cs
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\
+SFS
+none
+false
+DEBUG;TRACE
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\App.xaml
+12-634232043
+
+28-44891130
+13-1643599102
+Add_Championship.xaml;Add_Club.xaml;Add_Employee.xaml;Add_Player.xaml;Add_Team.xaml;Chooose.xaml;Edit_Delete.xaml;Edit_Mobile.xaml;Edit_Player.xaml;Enter_ID.xaml;Enter_ID_Employee.xaml;MainWindow.xaml;
+
+True
+
+>>>>>>> b290607be30860ecc719a545beec8e024ddf3c2e

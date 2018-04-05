@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Players>
+  <Player>
+    <Player_Name>ahmed </Player_Name>
+    <Player_ID>123</Player_ID>
+    <Mobile_Number>01927378893</Mobile_Number>
+    <Gender>Male</Gender>
+    <Medical_Form>Yes</Medical_Form>
+    <Salary>1200</Salary>
+    <Bonus>Yes</Bonus>
+    <Date_of_birth>12/05/1998</Date_of_birth>
+    <Team_Name>hawhaw</Team_Name>
+    <Senior>Yes</Senior>
+  </Player>
+  <Player>
+    <Player_Name>omar</Player_Name>
+    <Player_ID>987</Player_ID>
+    <Mobile_Number>01203535888</Mobile_Number>
+    <Gender>Male</Gender>
+    <Medical_Form>Yes</Medical_Form>
+    <Salary>900</Salary>
+    <Bonus>No</Bonus>
+    <Date_oF_birth>12/03/1997</Date_oF_birth>
+    <Team_Name>hawhaw</Team_Name>
+    <Senior>Yes</Senior>
+  </Player>
+</Players>

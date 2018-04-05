@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Clubs>
+  <Club>
+    <Club_Name>Shams</Club_Name>
+    <Starting_Date>1900</Starting_Date>
+    <Club_Teams>23</Club_Teams>
+    <Club_Championships>19</Club_Championships>
+    <Club_Sponsors>3</Club_Sponsors>
+  </Club>
+  <Club>
+    <Club_Name>Shams</Club_Name>
+    <starting_Date>1900</starting_Date>
+    <Club_Teams>23</Club_Teams>
+    <Club_Championships>19</Club_Championships>
+    <Club_Sponsors>3</Club_Sponsors>
+  </Club>
+  <Club>
+    <Club_Name>helio</Club_Name>
+    <starting_Date>2000</starting_Date>
+    <Club_Teams>6</Club_Teams>
+    <Club_Championships>2</Club_Championships>
+    <Club_Sponsors>5</Club_Sponsors>
+  </Club>
+  <Club>
+    <Club_Name>helio</Club_Name>
+    <starting_Date>2000</starting_Date>
+    <Club_Teams>6</Club_Teams>
+    <Club_Championships>2</Club_Championships>
+    <Club_Sponsors>5</Club_Sponsors>
+  </Club>
+  <Club>
+    <Club_Name>helio</Club_Name>
+    <starting_Date>2000</starting_Date>
+    <Club_Teams>6</Club_Teams>
+    <Club_Championships>2</Club_Championships>
+    <Club_Sponsors>5</Club_Sponsors>
+  </Club>
+  <Club>
+    <Club_Name>zouhor</Club_Name>
+    <starting_Date>2000</starting_Date>
+    <Club_Teams>13</Club_Teams>
+    <Club_Championships>7</Club_Championships>
+    <Club_Sponsors>4</Club_Sponsors>
+  </Club>
+</Clubs>
