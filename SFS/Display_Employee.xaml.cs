@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,20 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SFS
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Display_Employee.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Display_Employee : Window
     {
-        public MainWindow()
+        public Display_Employee()
         {
-            Chooose c = new Chooose();
-                c.Show();
             InitializeComponent();
         }
     }

@@ -8,6 +8,7 @@ namespace SFS
 {
     class Championships
     {
+
         string place;
         List<Team> teamList;
        // List<Results> teamResults;
