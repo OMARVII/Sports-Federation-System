@@ -76,6 +76,18 @@
     </Compile>
     <Compile Include="Club.cs" />
     <Compile Include="Coach.cs" />
+    <Compile Include="Display_Accounting.xaml.cs">
+      <DependentUpon>Display_Accounting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Championships.xaml.cs">
+      <DependentUpon>Display_Championships.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Employee.xaml.cs">
+      <DependentUpon>Display_Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Sponsers.xaml.cs">
+      <DependentUpon>Display_Sponsers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Edit_Delete.xaml.cs">
       <DependentUpon>Edit_Delete.xaml</DependentUpon>
     </Compile>
@@ -99,17 +111,6 @@
     </Compile>
     <Compile Include="Enter_ID_Employee.xaml.cs">
       <DependentUpon>Enter_ID_Employee.xaml</DependentUpon>
-    <Compile Include="Display_Accounting.xaml.cs">
-      <DependentUpon>Display_Accounting.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Display_Championships.xaml.cs">
-      <DependentUpon>Display_Championships.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Display_Employee.xaml.cs">
-      <DependentUpon>Display_Employee.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Display_Sponsers.xaml.cs">
-      <DependentUpon>Display_Sponsers.xaml</DependentUpon>
     </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Sponsers.cs" />
@@ -135,6 +136,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chooose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Display_Accounting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Display_Championships.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Display_Employee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Display_Sponsers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
