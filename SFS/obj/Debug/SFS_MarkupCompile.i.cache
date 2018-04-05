@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-﻿SFS
-
-
-winexe
-C#
-.cs
-C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\
-SFS
-none
-false
-DEBUG;TRACE
-C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\App.xaml
-11151548125
-
-181406532903
-13738642453
-MainWindow.xaml;
-
-True
-
-=======
 ﻿SFS
 
 
@@ -32,12 +10,11 @@ none
 false
 DEBUG;TRACE
 \\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\App.xaml
-12-634232043
+15-335384721
 
-28-44891130
+31-16543294
 13-1643599102
-Add_Championship.xaml;Add_Club.xaml;Add_Employee.xaml;Add_Player.xaml;Add_Team.xaml;Chooose.xaml;Edit_Delete.xaml;Edit_Mobile.xaml;Edit_Player.xaml;Enter_ID.xaml;Enter_ID_Employee.xaml;MainWindow.xaml;
+Add_Championship.xaml;Add_Club.xaml;Add_Employee.xaml;Add_Player.xaml;Add_Team.xaml;Chooose.xaml;Edit_Delete.xaml;Edit_Employee.xaml;Edit_Medicalform.xaml;Edit_Medicalform_Employee.xaml;Edit_Mobile_Player.xaml;Edit_Player.xaml;Enter_ID.xaml;Enter_ID_Employee.xaml;MainWindow.xaml;
 
-True
+False
 
->>>>>>> b290607be30860ecc719a545beec8e024ddf3c2e

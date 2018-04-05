@@ -23,5 +23,29 @@ namespace SFS
         {
             InitializeComponent();
         }
+
+        private void delete_Click(object sender, RoutedEventArgs e)
+        {
+            /* for(int i=0;i<Employees.count;i++)
+            {
+                if(Employees[i].ID==id.Text)
+                {
+                    Employees.remove(players[i]);
+                }
+            }*/
+            MessageBox.Show("Successfuly Deleted");
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Edit_Delete ed = new Edit_Delete();
+            ed.Show();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Edit_Employee eee = new SFS.Edit_Employee();
+            eee.Show();
+        }
     }
 }

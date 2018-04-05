@@ -27,12 +27,12 @@
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/rr.png" TileMode="Tile"/>
+                <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/add.png" TileMode="Tile"/>
             </Button.Background>
         </Button>
         <RadioButton GroupName="Senior" Name="Senior" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,221,0,0"/>
         <RadioButton GroupName="Senior" Name="Je" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,221,0,0" Height="16"/>
-        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Height="37" BorderThickness="0" ClickMode="Press">
+        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Height="37" BorderThickness="0" ClickMode="Press" Click="back_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>

@@ -159,6 +159,12 @@ namespace SFS
                 doc.Save("Employees.xml");
             }
         }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            Chooose cccc = new Chooose();
+            cccc.Show();
+        }
     }
     }
 

@@ -98,5 +98,11 @@ namespace SFS
                 doc.Save("Clubs.xml");
             }
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Chooose cccc = new Chooose();
+            cccc.Show();
+        }
     }
 }

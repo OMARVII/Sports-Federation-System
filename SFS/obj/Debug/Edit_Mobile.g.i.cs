@@ -43,7 +43,7 @@ namespace SFS {
         
         #line 13 "..\..\Edit_Mobile.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button button;
+        internal System.Windows.Controls.Button Edit;
         
         #line default
         #line hidden
@@ -79,7 +79,13 @@ namespace SFS {
             switch (connectionId)
             {
             case 1:
-            this.button = ((System.Windows.Controls.Button)(target));
+            this.Edit = ((System.Windows.Controls.Button)(target));
+            
+            #line 13 "..\..\Edit_Mobile.xaml"
+            this.Edit.Click += new System.Windows.RoutedEventHandler(this.Edit_Click);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;

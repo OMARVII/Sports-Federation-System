@@ -15,28 +15,18 @@ using System.Windows.Shapes;
 namespace SFS
 {
     /// <summary>
-    /// Interaction logic for Edit_Delete.xaml
+    /// Interaction logic for Edit_Mobile.xaml
     /// </summary>
-    public partial class Edit_Delete : Window
+    public partial class Edit_Mobile : Window
     {
-        public Edit_Delete()
+        public Edit_Mobile()
         {
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Edit_Click(object sender, RoutedEventArgs e)
         {
-            
 
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            if (choose.Text == "Player")
-            {
-                Enter_ID ei = new Enter_ID();
-                ei.Show();
-            }
         }
     }
 }

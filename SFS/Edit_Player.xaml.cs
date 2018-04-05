@@ -23,5 +23,25 @@ namespace SFS
         {
             InitializeComponent();
         }
+
+        private void mobile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void salary_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="Enter_ID" Height="300" Width="300">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/ID.png"/>
+        </Grid.Background>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="5,216,0,0" Height="53" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="delete" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="111,217,0,0" Height="53" Click="delete_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/deletee.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button3" Content="" HorizontalAlignment="Left" Margin="207,216,0,0" VerticalAlignment="Top" Width="83" Height="53" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/Edit2.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Margin="105,87,0,0"/>
+        <TextBox x:Name="id_Copy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Margin="105,87,0,0"/>
+
     </Grid>
 </Window>

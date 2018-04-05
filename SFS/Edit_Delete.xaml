@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Edit_Delete" Height="300" Width="300">
+        Title="Edit_Delete" Height="402.667" Width="391.333">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/Edit_Delete.png"/>
+        </Grid.Background>
+        <ComboBox x:Name="choose" Margin="138,129,19,208" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Employee"/>
+            <ComboBoxItem Content="Player"/>
+            <ComboBoxItem Content="Club"/>
+            <ComboBoxItem Content="Championship"/>
+            <ComboBoxItem Content="Team"/>
+        </ComboBox>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Height="69" Margin="2,303,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="back1.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Margin="293,302,-1,0" Click="button1_Click" Height="69" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="next.png"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>

@@ -20,7 +20,7 @@
                 <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/Add.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="45" BorderThickness="0">
+        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="45" BorderThickness="0" Click="back_Click">
             <Button.Background>
                 <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/back.png"/>
             </Button.Background>

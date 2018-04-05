@@ -23,7 +23,7 @@
         <RadioButton x:Name="Male" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,110,0,0"/>
         <RadioButton x:Name="Female" Content="" HorizontalAlignment="Left" Margin="158,110,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="Yes2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,162,0,0"/>
-        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Height="47">
+        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Height="47" Click="back_Click">
             <Button.Background>
                 <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/back.png"/>
             </Button.Background>
@@ -33,7 +33,7 @@
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/rr.png"/>
+                <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/add.png"/>
             </Button.Background>
         </Button>
         <RadioButton x:Name="Yes3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,211,0,0"/>
