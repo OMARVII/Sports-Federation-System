@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Employees>
+  <Employee>
+    <Employee_Name>Ahmed</Employee_Name>
+    <Employee_ID>12455</Employee_ID>
+    <Mobile_Number>0193873846</Mobile_Number>
+    <Gender>Female</Gender>
+    <Medical_Form>No</Medical_Form>
+    <Salary>2000</Salary>
+    <Bonus>No</Bonus>
+    <Employement_Date>2019</Employement_Date>
+    <Date_of_birth>1999</Date_of_birth>
+    <Available>Yes</Available>
+    <Department>HR</Department>
+  </Employee>
+  <Employee>
+    <Employee_Name>Sarah</Employee_Name>
+    <Employee_ID>1244</Employee_ID>
+    <Mobile_Number>01037464</Mobile_Number>
+    <Gender>Female</Gender>
+    <Medical_Form>No</Medical_Form>
+    <Salary>2000</Salary>
+    <Bonus>No</Bonus>
+    <Employement_Date>2016</Employement_Date>
+    <Date_of_birth>1998</Date_of_birth>
+    <Available>Yes</Available>
+  </Employee>
+</Employees>

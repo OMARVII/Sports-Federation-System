@@ -22,7 +22,8 @@ namespace SFS
     {
         public MainWindow()
         {
-            InitializeComponent();
+            Chooose c = new Chooose();
+                c.Show();
         }
     }
 }
