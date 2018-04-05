@@ -1,43 +1,20 @@
-<<<<<<< HEAD
 ﻿SFS
 
 
 winexe
 C#
 .cs
-\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System - Copy (2)\SFS\obj\Debug\
 SFS
 none
 false
 DEBUG;TRACE
-\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\App.xaml
-2-419086188
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System - Copy (2)\SFS\App.xaml
+5112684311
 
-19506473431
-13-1643599102
-Login.xaml;MainWindow.xaml;
-
-False
-
-=======
-﻿SFS
-
-
-winexe
-C#
-.cs
-C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\
-SFS
-none
-false
-DEBUG;TRACE
-C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\App.xaml
-11151548125
-
-181406532903
+221116406986
 13738642453
-MainWindow.xaml;
+Display_Accounting.xaml;Display_Championships.xaml;Display_Employee.xaml;Display_Sponsers.xaml;MainWindow.xaml;
 
 True
 
->>>>>>> cf3b90957e07fecb8aed5ee2c57784dc8f5d89da
