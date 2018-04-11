@@ -1,0 +1,24 @@
+﻿<Window x:Class="SFS.PlayersInEachTeamDG"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="PlayersInEachTeamDG" Height="350" Width="500">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+        </Grid.Background>
+        <DataGrid x:Name="PlayersInEachTeamdataG" HorizontalAlignment="Left" Height="208" Margin="0,79,0,0" VerticalAlignment="Top" Width="314"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="91" Click="button_Click">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

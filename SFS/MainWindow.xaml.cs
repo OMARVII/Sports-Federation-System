@@ -31,6 +31,10 @@ namespace SFS
             AGE a = new SFS.AGE();
             a.Show();
             this.Close();
+            mainqueryform f = new mainqueryform();
+            f.Show();
+           
+            
         }
     }
 }

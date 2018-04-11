@@ -1,0 +1,68 @@
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\bin\Debug\SFS.exe.config
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\MainWindow.g.cs
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\App.g.cs
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.cache
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.lref
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\bin\Debug\SFS.exe
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\bin\Debug\SFS.pdb
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\MainWindow.baml
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.g.resources
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.Properties.Resources.resources
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.exe
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\MainWindow.g.cs
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\App.g.cs
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.cache
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.lref
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\bin\Debug\SFS.exe.config
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\bin\Debug\SFS.exe
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\bin\Debug\SFS.pdb
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.csprojResolveAssemblyReference.cache
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\MainWindow.baml
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.g.resources
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.Properties.Resources.resources
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.exe
+C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\bin\Debug\SFS.exe.config
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SFS.exe
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\bin\Debug\SFS.exe
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\bin\Debug\SFS.pdb
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SFS.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\MainWindow.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\App.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.cache
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.lref
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\MainWindow.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SFS.g.resources
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SFS.Properties.Resources.resources
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\mainqueryform.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\mainqueryform.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SalaryQuery.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SalaryQuery.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SalaryQueryDataGrid.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\SalaryQueryDataGrid.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\EmployeesDepartmentDataG.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\EmployeesDepartmentQuery.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\PlayersInEachTeamDG.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\PlayersInEachTeamQuery.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\EmployeesDepartmentDataG.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\EmployeesDepartmentQuery.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\PlayersInEachTeamDG.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\PlayersInEachTeamQuery.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\EmployeeEmploymentDateDG.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\EmploymentdurationQuery.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\EmployeeEmploymentDateDG.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\EmploymentdurationQuery.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\QueryChampionShips(RESULTS).g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\QueryChampionShips(RESULTS).baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\ChampionshipTeamsDatagrid.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\TeamChampionShipsQuery.g.cs
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\ChampionshipTeamsDatagrid.baml
+C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\TeamChampionShipsQuery.baml
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\bin\Debug\SFS.exe.config
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.exe
+C:\Users\Dell\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
