@@ -1,0 +1,33 @@
+﻿<Window x:Class="SFS.Add_Options"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="Add_Options" Height="350" Width="500">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="backgrd.png"/>
+        </Grid.Background>
+        <Label x:Name="label2_Copy11" Content="Add:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,85,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Foreground="#FF34A5B0"/>
+        <ComboBox x:Name="choose" Margin="124,86,64,201" SelectionChanged="choose_SelectionChanged" >
+            <ComboBoxItem>Employee</ComboBoxItem>
+            <ComboBoxItem>Player</ComboBoxItem>
+            <ComboBoxItem>Club</ComboBoxItem>
+            <ComboBoxItem>Championship</ComboBoxItem>
+            <ComboBoxItem>Team</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Margin="400,249,0,0" Click="button1_Click" Height="69" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="next.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Height="69" Margin="-2,248,0,0" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

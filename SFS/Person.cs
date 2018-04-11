@@ -15,6 +15,7 @@ namespace SFS
         bool medicalReport;
         float salary;
         float bonus;
+        string mobile;
         public Person()
         {
             name = "";
@@ -109,6 +110,14 @@ namespace SFS
         {
 
         }
+        public void setmobile(string mobile)
+        {
+            this.mobile = mobile;
+        }
+        public string getmobile()
+        {
+            return this.mobile;
 
+        }
     }
 }

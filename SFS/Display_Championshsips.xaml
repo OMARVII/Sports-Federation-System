@@ -1,0 +1,31 @@
+﻿<Window x:Class="SFS.Display_Championshsips"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="Display_Championshsips" Height="350" Width="500">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="backgrd.png"/>
+        </Grid.Background>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="49,71,0,0" VerticalAlignment="Top" Height="181" Width="330"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="69,268,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.421,-0.554" Height="43">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="189,268,0,0" VerticalAlignment="Top" Width="75" Height="43" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="search.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Margin="304,268,0,0" VerticalAlignment="Top" Width="75" Height="43">
+            <Button.Background>
+                <ImageBrush ImageSource="view.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

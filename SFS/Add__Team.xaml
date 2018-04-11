@@ -1,0 +1,38 @@
+﻿<Window x:Class="SFS.Add__Team"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="Add__Team" Height="350" Width="500">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="backgrd.png"/>
+        </Grid.Background>
+        <Label x:Name="label2_Copy11" Content="Team Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,77,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="138"/>
+        <Label x:Name="label2_Copy" Content="Stage:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,112,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="69"/>
+        <Label x:Name="label2_Copy2" Content="Junior" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="243,112,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="78"/>
+        <Label x:Name="label2_Copy3" Content="Senior" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="158,114,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="80"/>
+        <TextBox x:Name="Name" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="140,84,175,0" TextChanged="Name_TextChanged"/>
+        <RadioButton x:Name="Senior" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="138,125,0,0" Height="16" Width="16"/>
+        <RadioButton x:Name="junior" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,126,0,0" Height="16" Width="16" RenderTransformOrigin="0.5,0.25"/>
+        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Height="41" BorderThickness="0" ClickMode="Press" Click="back_Click" Margin="4,275,0,0">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="416,271,0,-1" Click="button_Click" Height="50" BorderThickness="0,0,0,1">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="Add.png" TileMode="Tile"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

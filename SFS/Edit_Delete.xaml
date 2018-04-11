@@ -1,0 +1,33 @@
+﻿<Window x:Class="SFS.Edit_Delete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="Edit_Delete" Height="422.667" Width="493.333">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="backgrd.png"/>
+        </Grid.Background>
+        <ComboBox x:Name="choose" Margin="138,129,19,208" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Employee</ComboBoxItem>
+            <ComboBoxItem>Player</ComboBoxItem>
+            <ComboBoxItem>Club</ComboBoxItem>
+            <ComboBoxItem>Championship</ComboBoxItem>
+            <ComboBoxItem>Team</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Height="69" Margin="1,322,0,0" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back1.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Margin="393,323,0,0" Click="button1_Click" Height="69" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="next.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label2_Copy11" Content="Edit/Delete:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,126,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Foreground="#FF34A5B0"/>
+
+    </Grid>
+</Window>

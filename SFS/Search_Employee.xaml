@@ -1,0 +1,22 @@
+﻿<Window x:Class="SFS.Search_Employee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="Search_Employee" Height="350" Width="500">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="backgrd.png"/>
+        </Grid.Background>
+        <Label x:Name="label" Content="Enter ID:" HorizontalAlignment="Left" Margin="55,122,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="218,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" FontSize="16"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="358,246,0,0" VerticalAlignment="Top" Width="126" Height="65">
+            <Button.Background>
+                <ImageBrush ImageSource="search.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
