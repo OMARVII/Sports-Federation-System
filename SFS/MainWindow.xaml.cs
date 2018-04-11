@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,9 +22,15 @@ namespace SFS
     {
         public MainWindow()
         {
-            Chooose c = new Chooose();
-                c.Show();
             InitializeComponent();
+            Containers.Read_Players();
+            Containers.Read_Championships();
+            Containers.Read_Employees();
+            Containers.Read_Clubs();
+           Containers.Read_Teams();
+            AGE a = new SFS.AGE();
+            a.Show();
+            this.Close();
         }
     }
 }

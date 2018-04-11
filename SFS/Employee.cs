@@ -9,7 +9,7 @@ namespace SFS
     class Employee : Person
     {
         int working_year;
-        int Employment_date;
+        string Employment_date;
         bool status;
         string department;
 
@@ -17,14 +17,14 @@ namespace SFS
         public Employee()
         {
             working_year = 0;
-            Employment_date = 0;
+            Employment_date = "";
             status = false;
             department = "";
             
         }
-        public Employee(int n,int x,bool y,string z, string a, int d, string g, int i, bool m, float s, float b) :base(a,d,g,i,m,s,b)
+        public Employee(string x,bool y,string z, string a, string d, string g, string i, bool m, float s, float b) :base(a,d,g,i,m,s,b)
         {
-            working_year = n;
+            
             Employment_date = x;
             status = y;
             department = z;
@@ -39,12 +39,12 @@ namespace SFS
             return this.working_year;
 
         }
-        public void setEmployment_date(int Employment_date)
+        public void setEmployment_date(string Employment_date)
         {
             this.Employment_date = Employment_date;
 
         }
-        public int getEmployment_date()
+        public string getEmployment_date()
         {
             return this.Employment_date;
         }
@@ -66,15 +66,13 @@ namespace SFS
         {
             return this.department;
         }
-        public int Working_year_calc( int  working_year)
+        public int Working_year_calc()
         {
             int current_year = 2018;
             int years;
             years= current_year - working_year;
             return years;
-
         }
-  
-      
+ 
     }
 }

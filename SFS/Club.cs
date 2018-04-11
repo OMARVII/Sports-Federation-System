@@ -12,16 +12,16 @@ namespace SFS
         List<Championships> champList;
         List<Sponsers> sponsersList;
         string clubName;
-        int startingDate;
+        string startingDate;
         public Club()
         {
             teamList = new List<Team>();
             champList = new List<Championships>();
             sponsersList = new List<Sponsers>();
             clubName = "";
-            startingDate = 0;
+            startingDate = "";
         }
-        public Club(string club_Name, int start_Date)
+        public Club(string club_Name, string start_Date)
         {
             clubName = club_Name;
             startingDate = start_Date;
@@ -34,12 +34,12 @@ namespace SFS
         {
             return this.clubName;
         }
-        public void setStartingDate(int startingDate)
+        public void setStartingDate(string startingDate)
         {
             this.startingDate = startingDate;
 
         }
-        public int getStartingDate()
+        public string getStartingDate()
         {
             return this.startingDate;
         }

@@ -1,0 +1,41 @@
+﻿<Window x:Class="SFS.playersfiltration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="playersfiltration" Height="350" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="369*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="backgrd.png"/>
+        </Grid.Background>
+        <DataGrid x:Name="players" HorizontalAlignment="Left" VerticalAlignment="Top" Height="221" Width="325" Margin="25.333,93,0,0" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="Championship Top Players" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="287" Margin="35.333,51,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.ColumnSpan="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.304"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.661"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" RenderTransformOrigin="5.591,11.833" Grid.Column="2" Margin="296.666,261,0,0" Height="49">
+            <Button.Background>
+                <ImageBrush ImageSource="questionM.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="10,261,0,0" Height="49" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

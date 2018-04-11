@@ -12,7 +12,7 @@ namespace SFS
         int Contract_date;
         string Sponser_name;
         string Sponser_Number;
-        float price;
+        int Sponsor_price;
 
         public Sponsers()
         {
@@ -20,14 +20,15 @@ namespace SFS
             Contract_date = 0;
             Sponser_name = "";
             Sponser_Number = "";
-            price = 0;
+            Sponsor_price = 10000;
         }
-        public Sponsers(string a,int b,string c,string d)
+        public Sponsers(string a,int b,string c,string d, int e)
         {
             Name = a;
             Contract_date = b;
             Sponser_name = c;
             Sponser_Number = d;
+            Sponsor_price = e;
 
         }
         public void setName(string Name)
@@ -40,38 +41,24 @@ namespace SFS
 
         }
 
-        public void SetContract_date(int Contract_date)
-        {
-            this.Contract_date = Contract_date;
-        }
+       
         public int GetContract_date()
         {
             return this.Contract_date ;
         }
-        public void SetSponser_name(string Sponser_name)
-        {
-            this.Sponser_name = Sponser_name;
-
-        }
+      
         public string GetSponser_name()
         {
           return  this.Sponser_name;
         }
-        public void SetSponser_Number(string Sponser_Number)
-        {
-            this.Sponser_Number = Sponser_Number;
-        }
+      
         public string GetSponser_Number(string Sponser_Number)
         {
            return this.Sponser_Number;
         }
-        public void Setprice(float price)
+        public int GetSponsor_price()
         {
-            this.price = price;
-        }
-        public float GetPrice()
-        {
-            return this.price;
+            return this.Sponsor_price;
         }
 
     }

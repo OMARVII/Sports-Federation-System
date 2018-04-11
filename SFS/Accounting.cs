@@ -16,7 +16,7 @@ namespace SFS
             expenses = 0;
             Accountant = "";
         }
-        public Accounting(int Expenses,string accountant, int n, int x, bool y, string z, string a, int d, string g, int i, bool m, float s, float b) : base(n,x,y,z,a,d,g,i,m,s,b)
+        public Accounting(int Expenses,string accountant, int n, string x, bool y, string z, string a, string d, string g, string i, bool m, float s, float b) : base(x,y,z,a,d,g,i,m,s,b)
         {
             expenses = Expenses;
             Accountant = accountant;

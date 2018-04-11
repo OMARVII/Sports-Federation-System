@@ -1,0 +1,42 @@
+﻿<Window x:Class="SFS.AGE"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="AGE" Height="350" Width="500">
+    <Grid Margin="0,0,-6.667,0.333">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="132*"/>
+            <RowDefinition Height="139*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="backgrd.png"/>
+        </Grid.Background>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="402,94.333,0,0" Grid.Row="1" Height="60" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="questionM.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,94.333,0,0" Grid.Row="1" Height="60">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="CHOOSE :" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="124" Margin="28,51,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic"/>
+        <ComboBox x:Name="age1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="179,58,0,0" FontSize="18" FontFamily="Traditional Arabic" Height="25" SelectionChanged="age1_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF0F0C0C" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem>JUNIOR</ComboBoxItem>
+            <ComboBoxItem>SENIOR</ComboBoxItem>
+        </ComboBox>
+        <DataGrid x:Name="ages" HorizontalAlignment="Left" VerticalAlignment="Top" Height="206" Width="281" Margin="102,98,0,0" Grid.RowSpan="2"/>
+    </Grid>
+</Window>
