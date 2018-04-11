@@ -23,11 +23,11 @@ namespace SFS
         public MainWindow()
         {
             InitializeComponent();
-            Containers.Read_Players();
-            Containers.Read_Championships();
-            Containers.Read_Employees();
-            Containers.Read_Clubs();
-           Containers.Read_Teams();
+            //Containers.Read_Players();
+            //Containers.Read_Championships();
+            //Containers.Read_Employees();
+           // Containers.Read_Clubs();
+//Containers.Read_Teams();
             AGE a = new SFS.AGE();
             a.Show();
             this.Close();

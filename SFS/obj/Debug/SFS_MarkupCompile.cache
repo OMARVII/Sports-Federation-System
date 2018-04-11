@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\obj\Debug\
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\obj\Debug\
 SFS
 none
 false
 DEBUG;TRACE
-C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\App.xaml
-131222112351
+\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\App.xaml
+19-964960265
 
-26-203210018
-13738642453
-ChampionshipTeamsDatagrid.xaml;EmployeeEmploymentDateDG.xaml;EmployeesDepartmentDataG.xaml;EmployeesDepartmentQuery.xaml;EmploymentdurationQuery.xaml;mainqueryform.xaml;MainWindow.xaml;PlayersInEachTeamDG.xaml;PlayersInEachTeamQuery.xaml;QueryChampionShips(RESULTS).xaml;SalaryQuery.xaml;SalaryQueryDataGrid.xaml;TeamChampionShipsQuery.xaml;
+33752957360
+13-1643599102
+AGE.xaml;Bsponsor.xaml;ChampionshipTeamsDatagrid.xaml;coachgrid.xaml;EmployeeEmploymentDateDG.xaml;EmployeesDepartmentDataG.xaml;EmployeesDepartmentQuery.xaml;EmploymentdurationQuery.xaml;mainqueryform.xaml;MainWindow.xaml;placech.xaml;playersfiltration.xaml;PlayersInEachTeamDG.xaml;PlayersInEachTeamQuery.xaml;QueryChampionShips(RESULTS).xaml;SalaryQuery.xaml;SalaryQueryDataGrid.xaml;TeamChampionShipsQuery.xaml;typech.xaml;
 
 False
 

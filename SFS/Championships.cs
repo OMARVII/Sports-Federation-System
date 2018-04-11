@@ -24,7 +24,6 @@ namespace SFS
         }
         public Championships(string placee,string Type,bool sn)
         {
-            Name = name;
             place = placee;
             type = Type;
             senior = sn;
