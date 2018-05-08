@@ -5,20 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="EmployeeEmploymentDateDG" Height="350" Width="500">
+        Title="EmployeeEmploymentDateDG" Height="550
+        " Width="600">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="EmploymentDateDG" HorizontalAlignment="Left" Height="188" Margin="126,68,0,0" VerticalAlignment="Top" Width="218"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="97">
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="91" Click="button_Click" Margin="10,412,0,0">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="30" Height="Auto" Margin="0,0,463.333,544.333" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="240" Margin="18,152,0,0" VerticalAlignment="Top" Width="114" FontFamily="Traditional Arabic" FontSize="16"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="240" Margin="149,152,0,0" VerticalAlignment="Top" Width="123" FontFamily="Traditional Arabic" FontSize="16"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="240" Margin="276,152,0,0" VerticalAlignment="Top" Width="111" FontSize="16" FontFamily="Traditional Arabic"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="80" Margin="473,412,0,0" VerticalAlignment="Top" Width="87" BorderThickness="0" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="view.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Name" HorizontalAlignment="Left" Height="28" Margin="32,111,0,0" VerticalAlignment="Top" Width="126" FontWeight="Bold" FontFamily="Traditional Arabic" FontSize="16"/>
+        <Label x:Name="label1" Content="Department" HorizontalAlignment="Left" Height="28" Margin="146,114,0,0" VerticalAlignment="Top" Width="126" FontFamily="Traditional Arabic" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="label2" Content="Salary" HorizontalAlignment="Left" Height="36" Margin="290,111,0,0" VerticalAlignment="Top" Width="135" FontFamily="Traditional Arabic" FontWeight="Bold" FontSize="16"/>
 
     </Grid>
 </Window>

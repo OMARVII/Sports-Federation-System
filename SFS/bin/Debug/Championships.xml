@@ -1,9 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Championships>
   <Championship>
-    <Type_of_Championship>Offical</Type_of_Championship>
+    <Type_of_Championship>OFFICIAL</Type_of_Championship>
     <Place_of_Championship>Cairo</Place_of_Championship>
-    <Senior>Yes</Senior>
-    <Results>0</Results>
+    <Senior>Senior</Senior>
+    <Name>Cairo2018</Name>
+  </Championship>
+  <Championship>
+    <Type_of_Championship>NON-OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>Menya</Place_of_Championship>
+    <Senior>Junior</Senior>
+    <Name>Menya2018</Name>
+  </Championship>
+  <Championship>
+    <Type_of_Championship>NON-OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>Giza</Place_of_Championship>
+    <Senior>Junior</Senior>
+    <Name>Giza2018</Name>
+  </Championship>
+  <Championship>
+    <Type_of_Championship>OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>Alex</Place_of_Championship>
+    <Senior>Junior</Senior>
+    <Name>Alex2018</Name>
+  </Championship>
+  <Championship>
+    <Type_of_Championship>OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>Cairo</Place_of_Championship>
+    <Senior>Junior</Senior>
+    <Name>Swimming2018</Name>
+  </Championship>
+  <Championship>
+    <Type_of_Championship>OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>Cairo</Place_of_Championship>
+    <Senior>Senior</Senior>
+    <Name>Swimming2018</Name>
   </Championship>
 </Championships>

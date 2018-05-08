@@ -19,6 +19,7 @@ namespace SFS
     /// </summary>
     public partial class EmploymentdurationQuery : Window
     {
+        public static string ans = "";
         public EmploymentdurationQuery()
         {
             InitializeComponent();
@@ -26,9 +27,39 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            EmployeeEmploymentDateDG dd = new EmployeeEmploymentDateDG();
-            dd.Show();
+            if (textBox.Text == "")
+            {
+                MessageBox.Show("Please Enter Valid Data !");
+            }
+            else {
+                ans = textBox.Text;
+                EmployeeEmploymentDateDG dd = new EmployeeEmploymentDateDG();
+                dd.Show();
+                this.Close();
+            }
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            mainqueryform mq = new mainqueryform();
+            mq.Show();
             this.Close();
+
+        }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter numbers only !");
+                textBox.Text = textBox.Text.Remove(textBox.Text.Length - 1);
+            }
         }
     }
 }

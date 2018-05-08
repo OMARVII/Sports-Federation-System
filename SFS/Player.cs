@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace SFS
 {
-   class Player : Person
+    class Player : Person
     {
         string TeamName;
-        // list of championships
         bool senior;
-   public     Player()
+        public List<Championships> champion = new List<Championships>();
+        int result;
+        string CoachName;
+        string clubname;
+        public Player()
         {
             TeamName = "";
             if (ageCalculator() > 18)
@@ -24,15 +27,36 @@ namespace SFS
             }
         }
 
-        public Player(string name, string a, string d, string g, string i, bool m , float s, float b) : base(a, d, g, i, m, s, b)
+        public Player(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob, string teamname, string coach, string club) : base(namee, date, genderr, ID, medical, sal, bon, mob)
         {
-            this.TeamName = name;
-
+            this.TeamName = teamname;
+            this.CoachName = coach;
+            this.clubname = club;
         }
 
         public void set_teamname(string name)
         {
             TeamName = name;
+        }
+        public string get_teamname()
+        {
+            return TeamName;
+        }
+        public void set_CoachName(string n)
+        {
+            CoachName = n;
+        }
+        public string get_CoachName()
+        {
+            return CoachName;
+        }
+        public void set_results(int x)
+        {
+            result = x;
+        }
+        public int get_results()
+        {
+            return result;
         }
         public bool is_senior()
         {
@@ -46,6 +70,40 @@ namespace SFS
         {
 
         }
+        public void setclubName(string s)
+        {
+            this.clubname = s;
+        }
 
+        public string getClubName()
+        {
+            return this.clubname;
+        }
+        public static Player operator +(Player b, Player c)
+        {
+            Player player = b;
+            player.set_results(b.get_results() + c.get_results());
+            return player;
+        }
+        public static bool operator ==(Player b, Player c)
+        {
+            return (b.get_results()  == c.get_results());
+        }
+        public static bool operator !=(Player b, Player c)
+        {
+            return (b.get_results() != c.get_results());
+        }
+        public static bool operator >(Player b, Player c)
+        {
+            return (b.get_results() > c.get_results());
+        }
+        public static bool operator <(Player b, Player c)
+        {
+            return (b.get_results() < c.get_results());
+        }
     }
 }
+
+
+    
+

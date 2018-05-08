@@ -26,32 +26,48 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (choose.Text == "Employee")
+            if (choose.Text == "")
             {
-                Add_Employee ee = new Add_Employee();
-                ee.Show();
+                MessageBox.Show("Please Choose An Option");
+            }
+               else  if (choose.Text == "Employee")
+            {
+                if (employeelogin.empid == true)
+                {
+                    MessageBox.Show("You are not alowed to add employee");
+                }
+                else
+                {
+                    Add_Employee ee = new Add_Employee();
+                    ee.Show();
+                    this.Close();
+                }
             }
             else if (choose.Text == "Player")
             {
                 Add_Player p = new Add_Player();
                 p.Show();
+                this.Close();
             }
             else if (choose.Text == "Club")
             {
                 Add_Club c = new Add_Club();
                 c.Show();
+                this.Close();
             }
             else if (choose.Text == "Team")
             {
                 Add__Team t = new Add__Team();
                 t.Show();
+                this.Close();
             }
             else if (choose.Text == "Championship")
             {
                 Add_Championship cc = new Add_Championship();
                 cc.Show();
+                this.Close();
             }
-            this.Hide();
+            
         }
 
         private void choose_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -61,9 +77,16 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Options o = new Options();
+            adminoptions o = new adminoptions();
             o.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

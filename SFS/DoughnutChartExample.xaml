@@ -1,0 +1,32 @@
+﻿<Window x:Class="SFS.DoughnutChartExample"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="200" Title="Doughnut Chart" Height="620" Width="800" d:DataContext="{d:DesignInstance local:DoughnutChartExample}">
+    <Grid>
+        <TextBlock Margin="0" FontWeight="Medium" FontSize="32" Grid.Row="0"><Run Text="           People Working In Each Department "/><LineBreak/><Run/></TextBlock>
+        <lvc:PieChart Name="Chart" Grid.Row="1" Series="{Binding SeriesCollection}" 
+                      LegendLocation="Right" InnerRadius="145" Margin="0 40" Loaded="Chart_Loaded">
+            <lvc:PieChart.ChartLegend>
+                <lvc:DefaultLegend BulletSize="20"></lvc:DefaultLegend>
+            </lvc:PieChart.ChartLegend>
+            <lvc:PieChart.DataTooltip>
+                <lvc:DefaultTooltip BulletSize="20"></lvc:DefaultTooltip>
+            </lvc:PieChart.DataTooltip>
+        </lvc:PieChart>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,519,0,0" BorderThickness="0" Height="57" RenderTransformOrigin="0.311,0.405" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button3" BorderThickness="0" Content=""  HorizontalAlignment="Right" Width="24" Height="Auto" Margin="0,10,759.333,558.333" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="SFS.Loginas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="Loginas" Height="550" Width="600">
+    <Window.Background>
+        <ImageBrush ImageSource="backgrd.png"/>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="label" Content="HR Member" HorizontalAlignment="Left" Height="48" Margin="209,260,0,0" VerticalAlignment="Top" Width="146" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Accounting Member" HorizontalAlignment="Left" Height="46" Margin="175,324,0,0" VerticalAlignment="Top" Width="212" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="48" Margin="192,258,0,0" VerticalAlignment="Top" Width="161" BorderThickness="0" Click="button_Click" FontSize="22" FontFamily="Traditional Arabic">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="57" Margin="161,320,0,0" VerticalAlignment="Top" Width="242" BorderThickness="0" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Height="84" Margin="25,412,0,0" VerticalAlignment="Top" Width="91" BorderThickness="0" Click="button2_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" FontSize="22" Height="55" Margin="215,181,0,0" Click="button3_Click" FontWeight="Normal">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Label x:Name="label_Copy" Content="Admin" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="86" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold" RenderTransformOrigin="1.592,1.682"/>
+        </Button>
+    </Grid>
+</Window>

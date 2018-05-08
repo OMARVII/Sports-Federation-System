@@ -1,8 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Teams>
   <Team>
-    <Team_Name>Shams</Team_Name>
-    <Senior>Yes</Senior>
-    <Results>0</Results>
+    <Team_Name>Girls17</Team_Name>
+    <Club_Name>Sporting</Club_Name>
+    <Coach_Name>Mazen</Coach_Name>
+    <Senior>Junior</Senior>
+  </Team>
+  <Team>
+    <Team_Name>Girls16</Team_Name>
+    <Club_Name>Al Ahly</Club_Name>
+    <Coach_Name>Khaled</Coach_Name>
+    <Senior>Junior</Senior>
+  </Team>
+  <Team>
+    <Team_Name>Men</Team_Name>
+    <Club_Name>Al Ahly</Club_Name>
+    <Coach_Name>Rafy</Coach_Name>
+    <Senior>Senior</Senior>
+  </Team>
+  <Team>
+    <Team_Name>Women</Team_Name>
+    <Club_Name>Al Ahly</Club_Name>
+    <Coach_Name>Rafy</Coach_Name>
+    <Senior>Senior</Senior>
+  </Team>
+  <Team>
+    <Team_Name>Boys17</Team_Name>
+    <Club_Name>Sporting</Club_Name>
+    <Coach_Name>Mazen</Coach_Name>
+    <Senior>Junior</Senior>
   </Team>
 </Teams>

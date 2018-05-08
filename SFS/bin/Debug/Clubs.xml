@@ -1,10 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Clubs>
   <Club>
+    <Club_Name>Sporting</Club_Name>
+    <Starting_Date>2/6/1990</Starting_Date>
+  </Club>
+  <Club>
+    <Club_Name>Al Ahly</Club_Name>
+    <starting_Date>2/11/1969</starting_Date>
+  </Club>
+  <Club>
+    <Club_Name>Al Zamalek</Club_Name>
+    <starting_Date>2/11/1970</starting_Date>
+  </Club>
+  <Club>
     <Club_Name>Heliopolis</Club_Name>
-    <Starting_Date>1/6/2006</Starting_Date>
-    <Club_Teams>0</Club_Teams>
-    <Club_Championships>0</Club_Championships>
-    <Club_Sponsors>0</Club_Sponsors>
+    <starting_Date>2/11/1960</starting_Date>
+  </Club>
+  <Club>
+    <Club_Name>Al Shams</Club_Name>
+    <starting_Date>4/12/1966</starting_Date>
+  </Club>
+  <Club>
+    <Club_Name>Heliolido</Club_Name>
+    <starting_Date>2/1/1910</starting_Date>
+  </Club>
+  <Club>
+    <Club_Name>Smoha</Club_Name>
+    <starting_Date>2/1/1910</starting_Date>
+  </Club>
+  <Club>
+    <Club_Name>Wadi Degla</Club_Name>
+    <starting_Date>2/1/1910</starting_Date>
+  </Club>
+  <Club>
+    <Club_Name>Madinet Nasr</Club_Name>
+    <starting_Date>5/6/1963</starting_Date>
   </Club>
 </Clubs>

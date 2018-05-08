@@ -1,9 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Championships>
   <Championship>
-    <Type_of_Championship>Offical</Type_of_Championship>
-    <Place_of_Championship>Cairo</Place_of_Championship>
-    <Senior>Yes</Senior>
-    <Results>0</Results>
+    <Type_of_Championship>OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>cairo</Place_of_Championship>
+    <Senior>Senior</Senior>
+    <Name>Swimming</Name>
+  </Championship>
+  <Championship>
+    <Type_of_Championship>NON-OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>cairo</Place_of_Championship>
+    <Senior>Junior</Senior>
+    <Name>Handball</Name>
+  </Championship>
+  <Championship>
+    <Type_of_Championship>OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>cairo</Place_of_Championship>
+    <Senior>Senior</Senior>
+    <Name>Ballet</Name>
+  </Championship>
+  <Championship>
+    <Type_of_Championship>OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>Alex</Place_of_Championship>
+    <Senior>Junior</Senior>
+    <Name>Swimming</Name>
+  </Championship>
+  <Championship>
+    <Type_of_Championship>NON-OFFICIAL</Type_of_Championship>
+    <Place_of_Championship>cairo</Place_of_Championship>
+    <Senior>Junior</Senior>
+    <Name>Swimming</Name>
   </Championship>
 </Championships>

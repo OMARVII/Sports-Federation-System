@@ -24,21 +24,67 @@ namespace SFS
             InitializeComponent();
         }
 
+        bool available = false;
         private void button_Click(object sender, RoutedEventArgs e)
         {
-        /*    List<Championships> l =//main list;
-            for (int i = 0; i < l.Count; i++)
-            {
-                    if (l[i].GetPlace() == textBox.Text )
-                    {
-                        Championships temp = l[i];
-                    l[i] = temp;
-                       
-                    }
-                } */
-            }
             
-           
+            List<Championships> l = Containers.championship_list;
+            List<string> ttype = new List<string>();
+            List<string> tplace = new List<string>();
+            List<string> tname = new List<string>();
+            if (comboBox.Text == "")
+            {
+                MessageBox.Show("Choose An Option !");
+            }
+            else
+            {
+                for (int i = 0; i < Containers.championship_list.Count; i++)
+                {
+                    
+                    if (l[i].GetPlace() == comboBox.Text)
+                    {
+                        available = true;
+                        ttype.Add(l[i].Gettype());
+                        tplace.Add(l[i].GetPlace());
+                        tname.Add(l[i].getName());
+                        
+                    }
+
+                }
+                 if(available==false)
+                    {
+                    MessageBox.Show("No available data in this place !");
+
+                }
+
+                listBox.ItemsSource = ttype;
+                listBox1.ItemsSource = tplace;
+                listBox2.ItemsSource = tname;
+                
+            } 
+            
+          
+
+        } 
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            mainqueryform mq = new mainqueryform();
+            mq.Show();
+            this.Close();
+
         }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
+        }
+    }
     }
 

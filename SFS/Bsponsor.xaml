@@ -5,21 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Bsponsor" Height="350" Width="500">
+        Title="Bsponsor" Height="550" Width="600">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="backgrd.png"/>
+            <ImageBrush ImageSource="new.png"/>
         </Grid.Background>
-        <Label x:Name="label" Content="Best Sponsor" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="144" Margin="164,42,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic"/>
-        <DataGrid x:Name="bestsponsor" HorizontalAlignment="Left" VerticalAlignment="Top" Height="206" Width="281" Margin="102,87,0,0"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="408,251,0,0" Height="60" Click="button_Click">
+        <Label x:Name="label" Content="Best Sponsor" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="144" Margin="188,60,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" BorderThickness="0" VerticalAlignment="Top" Width="75" Margin="496,413,0,0" Height="86" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,251,0,0" Height="60">
+        <Button x:Name="button1" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="14,413,0,0" Height="86" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="100" Margin="188,189,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="100" Margin="293,189,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <Label x:Name="name" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,151,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="price" Content="Price" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="293,151,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" RenderTransformOrigin="0.882,0.458"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="172" VerticalAlignment="Top" Width="25" Margin="164,121,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <TextBox x:Name="textBox" TextAlignment="Center" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Margin="14,231,0,0" FontFamily="Traditional Arabic" FontSize="13"/>
+        <Label x:Name="label_Copy" Content="Best Deal" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="144" Margin="10,189,0,0" FontSize="17" FontWeight="Bold" FontFamily="Traditional Arabic"/>
+        <Button x:Name="exit" Content="" HorizontalAlignment="Left" Width="43" Height="Auto" BorderThickness="0" Margin="14,10,0,465.333" Click="button1_Click" RenderTransformOrigin="0.5,0.506">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
             </Button.Background>
         </Button>
 

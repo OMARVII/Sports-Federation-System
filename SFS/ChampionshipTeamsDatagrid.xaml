@@ -5,18 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="ChampionshipTeamsDatagrid" Height="350" Width="500">
+        Title="ChampionshipTeamsDatagrid" Height="500" Width="600">
+    <Window.Background>
+        <ImageBrush ImageSource="new.png"/>
+    </Window.Background>
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
-        </Grid.Background>
-        <DataGrid x:Name="TeamResultsDatagrid" HorizontalAlignment="Left" Height="226" Margin="10,83,0,0" VerticalAlignment="Top" Width="337"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="106" Click="button_Click">
-            <Button.BorderBrush>
-                <ImageBrush/>
-            </Button.BorderBrush>
+        <Label x:Name="label" Content="Teams Participated" HorizontalAlignment="Left" Height="56" Margin="123,72,0,0" VerticalAlignment="Top" Width="294" FontSize="24" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="230" Margin="139,191,0,0" VerticalAlignment="Top" Width="144"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="71" Margin="487,390,0,0" VerticalAlignment="Top" Width="88" BorderThickness="0" Click="button_Click">
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="view.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="71" Margin="22,390,0,0" VerticalAlignment="Top" Width="88" BorderThickness="0" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="231" Margin="288,190,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label x:Name="label1" Content=" Name" HorizontalAlignment="Left" Height="30" Margin="141,152,0,0" VerticalAlignment="Top" Width="106" FontSize="18" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="label2" Content=" Result " HorizontalAlignment="Left" Height="30" Margin="294,152,0,0" VerticalAlignment="Top" Width="123" FontSize="18" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="31" BorderThickness="0" Click="button2_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
             </Button.Background>
         </Button>
 

@@ -28,5 +28,29 @@ namespace SFS
         {
 
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            List<Club> find_Club = new List<Club>();
+            if (textBox.Text == "")
+            {
+                MessageBox.Show("Please fill the required information");
+            }
+            for (int i = 0; i < Containers.Club_list.Count; i++)
+            {
+                if (Containers.Club_list[i].getClubName() == textBox.Text)
+                {
+                    find_Club.Add(Containers.Club_list[i]);
+                }
+
+            }
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
+        }
     }
 }

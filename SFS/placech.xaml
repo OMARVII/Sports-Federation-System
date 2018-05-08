@@ -14,19 +14,34 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="place" HorizontalAlignment="Left" VerticalAlignment="Top" Height="224" Width="281" Margin="77.333,80,0,0" Grid.Column="1"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="377.333,253,0,0" Height="58" Click="button_Click" Grid.Column="1">
+        <Button x:Name="button" Content=""  BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="377.333,253,0,0" Height="58" Click="button_Click" Grid.Column="1">
             <Button.Background>
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="10,253,0,0" Height="58" Grid.ColumnSpan="2">
+        <Button x:Name="button1" Content=""  BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="10,253,0,0" Height="58" Grid.ColumnSpan="2" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="label" Content="Place :" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="84" Margin="104.333,38,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic" Grid.Column="1"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Margin="183.333,48,0,0" FontSize="16" FontFamily="Traditional Arabic" Grid.Column="1"/>
+        <Button x:Name="button3" BorderThickness="0" Content="" Height="29" Margin="8,0,455.333,282.333" Click="button3_Click" RenderTransformOrigin="2.091,0.453" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Place :" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="84" Margin="41,36,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic" Grid.Column="1"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="156" VerticalAlignment="Top" Width="110" Grid.Column="1" Margin="269.333,130,0,0"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="156" VerticalAlignment="Top" Width="92" Grid.Column="1" Margin="55.333,130,0,0" RenderTransformOrigin="2.472,1.595"/>
+        <Label x:Name="place" Content="Place" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62.333,88,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="1"/>
+        <Label x:Name="type" Content="Type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="284.333,88,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="1"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="156" VerticalAlignment="Top" Width="100" Grid.Column="1" Margin="155.333,130,0,0"/>
+        <Label x:Name="type_Copy" Content="        Name&#xD;&#xA;of championship" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="145.333,80,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="1"/>
+        <ComboBox x:Name="comboBox" Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="131.333,40,0,0" VerticalAlignment="Top" Width="140" FontSize="16" FontFamily="Traditional Arabic">
+            <ComboBoxItem>Cairo</ComboBoxItem>
+            <ComboBoxItem>Alex</ComboBoxItem>
+            <ComboBoxItem>Giza</ComboBoxItem>
+            <ComboBoxItem>Menya</ComboBoxItem>
 
+        </ComboBox>
     </Grid>
 </Window>

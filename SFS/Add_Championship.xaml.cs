@@ -28,87 +28,117 @@ namespace SFS
         {
             InitializeComponent();
         }
+       
 
         private void add_Click(object sender, RoutedEventArgs e)
         {
             string sen;
             if (Senior.IsChecked == true)
-                sen = "Yes";
-            else sen = "No";
-
-            if (type.Text == "" || (Senior.IsChecked == false && junior.IsChecked == false) || result.Text == ""||place.Text=="")
+                sen = "Senior";
+            else sen = "Junior";
+            bool found = false;
+            if (type.Text == "" || (Senior.IsChecked == false && junior.IsChecked == false) || place.Text == ""|| name.Text=="")
             {
                 MessageBox.Show("Please fill the required information !");
             }
-           else  if (!File.Exists("Championships.xml"))
-            {
-                XmlTextWriter document = new XmlTextWriter("Championships.xml", Encoding.UTF8);
-
-                document.Formatting = Formatting.Indented;
-                document.WriteStartDocument();
-                document.WriteStartElement("Championships");
-                document.WriteStartElement("Championship");
-
-                document.WriteStartElement("Type_of_Championship");
-                document.WriteString(type.Text);
-                document.WriteEndElement();
-
-                document.WriteStartElement("Place_of_Championship");
-                document.WriteString(place.Text);
-                document.WriteEndElement();
-
-                document.WriteStartElement("Senior");
-                document.WriteString(sen);
-                document.WriteEndElement();
-
-                document.WriteStartElement("Results");
-                document.WriteString(result.Text);
-                document.WriteEndElement();
-
-                document.WriteEndElement();
-                document.WriteEndElement();
-                document.WriteEndDocument();
-
-                document.Close();
-
-                MessageBox.Show("Championship Successfuly Added.");
-            }
             else
-
             {
-                XmlDocument doc = new XmlDocument();
-                doc.Load("Championships.xml");
 
-                XmlNode Championshipp = doc.CreateElement("Championships");
+                for (int i = 0; i < Containers.championship_list.Count; i++)
+                {
+                    if ((type.Text == Containers.championship_list[i].Gettype())&& (place.Text == Containers.championship_list[i].GetPlace())&&(sen == Containers.championship_list[i].getSenior())&&(name.Text == Containers.championship_list[i].getName()))
+                    {
+                        found = true;
+                    }
+                }
+                if (found == true)
+                {
+                    MessageBox.Show("Championship Already Exists !");
+                   
+                }
+                else
+                {
+                    Championships added = new Championships(place.Text, type.Text, sen, name.Text);
+                    Containers.championship_list.Add(added);
+                    if (!File.Exists("Championships.xml"))
+                    {
+                        XmlTextWriter document = new XmlTextWriter("Championships.xml", Encoding.UTF8);
 
-                XmlNode typee = doc.CreateElement("Type_of_Championship");
-                typee.InnerText = type.Text;
-                Championshipp.AppendChild(typee);
+                        document.Formatting = Formatting.Indented;
+                        document.WriteStartDocument();
+                        document.WriteStartElement("Championships");
+                        document.WriteStartElement("Championship");
 
-                XmlNode placee = doc.CreateElement("Place_of_Championship");
-                placee.InnerText = place.Text;
-                Championshipp.AppendChild(placee);
+                        document.WriteStartElement("Type_of_Championship");
+                        document.WriteString(type.Text);
+                        document.WriteEndElement();
 
-                XmlNode senior = doc.CreateElement("Senior");
-                senior.InnerText = sen;
-                Championshipp.AppendChild(senior);
+                        document.WriteStartElement("Place_of_Championship");
+                        document.WriteString(place.Text);
+                        document.WriteEndElement();
 
-                XmlNode res = doc.CreateElement("Results");
-                res.InnerText = result.Text;
-                Championshipp.AppendChild(res);
+                        document.WriteStartElement("Senior");
+                        document.WriteString(sen);
+                        document.WriteEndElement();
 
-                doc.DocumentElement.AppendChild(Championshipp);
-                doc.Save("Championships.xml");
+                        document.WriteStartElement("Name");
+                        document.WriteString(name.Text);
+                        document.WriteEndElement();
 
-                MessageBox.Show("Championship Successfuly Added.");
+                        document.WriteEndElement();
+                        document.WriteEndElement();
+                        document.WriteEndDocument();
+
+                        document.Close();
+
+                        MessageBox.Show("Championship Successfuly Added.");
+                    }
+                    else
+
+                    {
+                        XmlDocument doc = new XmlDocument();
+                        doc.Load("Championships.xml");
+
+                        XmlNode Championshipp = doc.CreateElement("Championship");
+
+                        XmlNode typee = doc.CreateElement("Type_of_Championship");
+                        typee.InnerText = type.Text;
+                        Championshipp.AppendChild(typee);
+
+                        XmlNode placee = doc.CreateElement("Place_of_Championship");
+                        placee.InnerText = place.Text;
+                        Championshipp.AppendChild(placee);
+
+                        XmlNode senior = doc.CreateElement("Senior");
+                        senior.InnerText = sen;
+                        Championshipp.AppendChild(senior);
+
+
+
+                        XmlNode na = doc.CreateElement("Name");
+                        na.InnerText = name.Text;
+                        Championshipp.AppendChild(na);
+
+                        doc.DocumentElement.AppendChild(Championshipp);
+                        doc.Save("Championships.xml");
+
+                        MessageBox.Show("Championship Successfuly Added.");
+                    }
+                }
             }
-           
         }
-
         private void back_Click(object sender, RoutedEventArgs e)
         {
             Add_Options cccc = new Add_Options();
             cccc.Show();
+            this.Close();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions a = new adminoptions();
+            a.Show();
+            this.Close();
         }
     }
 }

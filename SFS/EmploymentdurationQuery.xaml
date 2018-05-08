@@ -5,28 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="EmploymentdurationQuery" Height="350" Width="500">
+        Title="EmploymentdurationQuery" Height="550" Width="600">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
         <Label x:Name="label" Content="Enter Employment Duration Needed
-               " HorizontalAlignment="Left" Height="50" Margin="0,107,0,0" VerticalAlignment="Top" Width="441" FontSize="24"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="37" Margin="0,162,0,0" TextWrapping="Wrap" Text="Number of Years" VerticalAlignment="Top" Width="205" FontSize="24"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="108" Margin="361,211,0,0" VerticalAlignment="Top" Width="131" Click="button_Click">
+               " Height="50" Margin="98,216,10.333,0" VerticalAlignment="Top" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="37" Margin="223,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Traditional Arabic" FontSize="18" Width="130" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="button" BorderThickness="0" Content="" HorizontalAlignment="Left" Height="84" Margin="451,415,0,0" VerticalAlignment="Top" Width="101" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="102" VerticalAlignment="Top" Width="133">
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="39" Height="Auto" Margin="0,14,537.333,471.333" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" BorderThickness="0" Content="" HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="92" Click="button1_Click" Margin="17,415,0,0">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

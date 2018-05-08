@@ -26,8 +26,94 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Search_Sponser y = new Search_Sponser();
-            y.Show();
+            bool check = false;
+            for (int i = 0; i < Containers.Sponsor_list.Count; i++)
+            {
+                if (Containers.Sponsor_list[i].GetSponser_name() == textBox.Text)
+                {
+                    check = true;
+                    break;
+                }
+            }
+            if (textBox.Text == "")
+            {
+                MessageBox.Show("Please fill the required information");
+            }
+            else if(check==false)
+            {
+                MessageBox.Show("Please enter valid sponser name !");
+            }
+            List<string> sponser_name = new List<string>();
+           // List<int> contractdate = new List<int>();
+            List<int> price = new List<int>();
+
+            for (int i = 0; i < Containers.Sponsor_list.Count; i++)
+            {
+                if (Containers.Sponsor_list[i].GetSponser_name() == textBox.Text)
+                {
+                    sponser_name.Add(Containers.Sponsor_list[i].GetSponser_name());
+                    //contractdate.Add(Containers.Sponsor_list[i].GetContract_date());
+                    price.Add(Containers.Sponsor_list[i].GetSponsor_price());
+                }
+                listBox.ItemsSource = sponser_name;
+             //   listBox1.ItemsSource = contractdate;
+                listBox3.ItemsSource = price;
+            }
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBox.Text == "")
+            {
+                List<string> sponser_name = new List<string>();
+                List<int> contractdate = new List<int>();
+                List<int> price = new List<int>();
+
+                for (int i = 0; i < Containers.Sponsor_list.Count; i++)
+                {
+                    sponser_name.Add(Containers.Sponsor_list[i].GetSponser_name());
+                    //contractdate.Add(Containers.Sponsor_list[i].GetContract_date());
+                    price.Add(Containers.Sponsor_list[i].GetSponsor_price());
+                }
+                listBox.ItemsSource = sponser_name;
+                //listBox1.ItemsSource = contractdate;
+                listBox3.ItemsSource = price;
+            }
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (adminoptions.disp == true)
+            {
+                displayOptions z = new displayOptions();
+                z.Show();
+                this.Close();
+            }
+            else
+            {
+                searchoptions so = new searchoptions();
+                so.Show();
+                this.Close();
+            }
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
+        }
+
+        private void button3_Click_1(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

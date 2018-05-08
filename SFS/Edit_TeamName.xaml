@@ -5,19 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Edit_TeamName" Height="350" Width="500">
+        Title="Edit_TeamName" Height="550" Width="600">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Label x:Name="label2_Copy" Content="New Team Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,104,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <TextBox x:Name="Teamname" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Margin="219,114,0,0" TextChanged="textBox_TextChanged"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="403,267,0,0" Height="50" Click="button_Click">
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="47" Height="Auto" Margin="0,7,538,457" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label2_Copy" Content="New Club Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,219,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="Teamname" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Margin="220,218,0,0" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="button" BorderThickness="0" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="490,439,0,0" Height="73" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="Edit2.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="3,272,0,0" Height="46">
+        <Button x:Name="button1" BorderThickness="0" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="16,437,0,0" Height="73" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>

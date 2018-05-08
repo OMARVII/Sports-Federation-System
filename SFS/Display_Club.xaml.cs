@@ -26,8 +26,101 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Search_club b = new Search_club();
-            b.Show();
+            bool check = false;
+            for (int i = 0; i < Containers.Club_list.Count; i++)
+            {
+                if (Containers.Club_list[i].getClubName() == textBox.Text)
+                {
+                    check = true;
+                    break;
+                }
+            }
+            if (textBox.Text == "")
+            {
+                MessageBox.Show("Please fill the required information");
+            }
+            else if(check==false)
+            {
+                MessageBox.Show("Please enter valid name !");
+            }
+            else
+            {
+                List<string> cname = new List<string>();
+                List<string> sdate = new List<string>();
+                List<int> sresults = new List<int>();
+
+                for (int i = 0; i < Containers.Club_list.Count; i++)
+                {
+                    if (textBox.Text == Containers.Club_list[i].getClubName())
+                    {
+                        cname.Add(Containers.Club_list[i].getClubName());
+                        sdate.Add(Containers.Club_list[i].getStartingDate());
+                        sresults.Add(Containers.Club_list[i].Gettotalresults());
+
+                    }
+                }
+                listBox.ItemsSource = cname;
+                listBox_Copy.ItemsSource = sdate;
+                listBox1.ItemsSource = sresults;
+
+
+            }
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+            List<Team> tlist = new List<Team>();
+            List<Championships> chlist = new List<Championships>();
+            List<Sponsers> slist = new List<Sponsers>();
+            List<string> cname = new List<string>();
+            List<string> sdate = new List<string>();
+            List<int> sresults = new List<int>();
+
+            for (int i = 0; i < Containers.Club_list.Count; i++)
+            {
+                
+                    cname.Add(Containers.Club_list[i].getClubName());
+                    sdate.Add(Containers.Club_list[i].getStartingDate());
+                sresults.Add(Containers.Club_list[i].Gettotalresults());
+
+
+            }
+            listBox.ItemsSource = cname;
+            listBox_Copy.ItemsSource = sdate;
+            listBox1.ItemsSource = sresults;
+
+
+
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            
+            adminoptions a = new adminoptions();
+            a.Show();
+            this.Close();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (adminoptions.disp == true)
+            {
+                displayOptions z = new displayOptions();
+                z.Show();
+                this.Close();
+            }
+            else
+            {
+                searchoptions so = new searchoptions();
+                so.Show();
+                this.Close();
+            }
+
+        }
+
+        private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
         }
     }

@@ -5,28 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Add_Club" Height="350" Width="500
-        ">
+        Title="Add_Club" Height="550" Width="600">
     <Grid Margin="7,0,-1,7">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="557*"/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="backgrd.png"/>
+            <ImageBrush ImageSource="new.png"/>
         </Grid.Background>
-        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Margin="156,121,0,0" Grid.Column="1"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Grid.ColumnSpan="2" Height="49" Click="button_Click" Margin="1,271,0,0">
+        <TextBox x:Name="Name" TextAlignment="Center"  HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="156,176,0,0" Grid.Column="1"/>
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Grid.ColumnSpan="2" Height="65" Click="button_Click" Margin="10,439,0,0">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="label2" Content="Club Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,115,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Label x:Name="label2_Copy" Content="Starting Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,175,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <DatePicker x:Name="starting" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="158,184,0,0" Width="153" Height="26"/>
-        <Button x:Name="button2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Grid.Column="1" Margin="319,269,0,0" Click="button2_Click" Height="42">
+        <Label x:Name="label2" Content="Club Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,174,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Column="1" Height="43" Width="128"/>
+        <Label x:Name="label2_Copy" Content="Starting Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,270,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Grid.Column="1" Height="43" Width="146"/>
+        <DatePicker x:Name="starting" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="156,263,0,0" Width="180" Height="40"/>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" BorderThickness="0" VerticalAlignment="Top" Width="73" Grid.Column="1" Margin="389,439,0,0" Click="button2_Click" Height="65">
             <Button.Background>
                 <ImageBrush ImageSource="Add.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1"  BorderThickness="0" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="66" Click="button1_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
             </Button.Background>
         </Button>
 

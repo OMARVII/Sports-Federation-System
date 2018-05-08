@@ -30,5 +30,84 @@ namespace SFS
             sq.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+           // List<Employee> ch = new List<Employee>();
+            List<string> filtered_Name = new List<string>();
+            List<string> filtered_dep = new List<string>();
+            List<float> filtered_Salary = new List<float>();
+           //  MessageBox.Show(SalaryQuery.query);
+          //  MessageBox.Show(SalaryQuery.value.ToString());
+            for (int i = 0; i < Containers.Employee_list.Count(); i++)
+            {
+               // MessageBox.Show(Containers.Employee_list[i].getSalary().ToString());
+                
+                if (SalaryQuery.query == "Less Than or Equal")
+                {
+                    if (Containers.Employee_list[i].getSalary() <= SalaryQuery.value) 
+                    {
+                        filtered_Name.Add(Containers.Employee_list[i].getName());
+                        filtered_dep.Add(Containers.Employee_list[i].GetDepartment());
+                        filtered_Salary.Add(Containers.Employee_list[i].getSalary());
+                    }
+                }
+                else if (SalaryQuery.query == "Greater Than or equal")
+                {
+                    if (Containers.Employee_list[i].getSalary() >= SalaryQuery.value)
+                    {
+                        filtered_Name.Add(Containers.Employee_list[i].getName());
+                        filtered_dep.Add(Containers.Employee_list[i].GetDepartment());
+                        filtered_Salary.Add(Containers.Employee_list[i].getSalary());
+                    }
+                }
+                else if (SalaryQuery.query == "Greater than")
+                { 
+                    if (Containers.Employee_list[i].getSalary() > SalaryQuery.value)
+                    {
+                        filtered_Name.Add(Containers.Employee_list[i].getName());
+                        filtered_dep.Add(Containers.Employee_list[i].GetDepartment());
+                        filtered_Salary.Add(Containers.Employee_list[i].getSalary());
+                    }
+                }
+                else if (SalaryQuery.query == "Less than")
+                {
+                    if (Containers.Employee_list[i].getSalary() < SalaryQuery.value)
+                    {
+                        filtered_Name.Add(Containers.Employee_list[i].getName());
+                        filtered_dep.Add(Containers.Employee_list[i].GetDepartment());
+                        filtered_Salary.Add(Containers.Employee_list[i].getSalary());
+                    }
+                }
+                else if (SalaryQuery.query == "Equal")
+                {
+                    if (Containers.Employee_list[i].getSalary() == SalaryQuery.value)
+                    {
+                        filtered_Name.Add(Containers.Employee_list[i].getName());
+                        filtered_dep.Add(Containers.Employee_list[i].GetDepartment());
+                        filtered_Salary.Add(Containers.Employee_list[i].getSalary());
+                    }
+                }
+               
+            }
+            if (filtered_Name.Count() == 0)
+            {
+                MessageBox.Show("No Employees Available In This Query ");
+            }
+            else
+            {
+                listBox.ItemsSource = filtered_Name;
+                listBox1.ItemsSource = filtered_dep;
+                listBox2.ItemsSource = filtered_Salary;
+            }
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions ap = new adminoptions();
+            ap.Show();
+                
+            this.Close();
+        }
     }
 }

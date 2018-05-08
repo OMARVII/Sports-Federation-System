@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,7 +8,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Xml;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Drawing;
+using System.Data;
 namespace SFS
 {
     /// <summary>
@@ -26,10 +28,11 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-           bool avail = false;
+           string avail ="";
             if (yes.IsChecked == true)
-                avail = true;
-            if ((yes.IsChecked == true) && (no.IsChecked == true))
+                avail = "Yes";
+            else avail = "No";
+            if ((yes.IsChecked == false) && (no.IsChecked == false))
                 MessageBox.Show("Please fill the required information !");
 
             else
@@ -42,20 +45,46 @@ namespace SFS
                     }
 
                 }
-                
-                MessageBox.Show("Done Changes");
+                if (File.Exists("Employees.xml"))
+                {
+                    File.Delete("Employees.xml");
+                }
+
+                for (int i = 0; i < Containers.Employee_list.Count; i++)
+                {
+                    Containers.write_Employee(Containers.Employee_list[i]);
+
+                }
+                if (Enter_ID_Employee.coaach == true)
+                {
+                    if (File.Exists("Coaches.xml"))
+                    {
+                        File.Delete("Coaches.xml");
+                    }
+
+                    for (int i = 0; i < Containers.Coach_list.Count; i++)
+                    {
+                        Containers.write_coach(Containers.Coach_list[i]);
+
+                    }
+                }
+                MessageBox.Show("Changes Done");
+
             }
-
-
-
-
-
         }
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
             Edit_Employee oo = new Edit_Employee();
             oo.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

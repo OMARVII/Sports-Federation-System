@@ -1,0 +1,52 @@
+﻿<Window x:Class="SFS.searchoptions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="searchoptions" Height="550" Width="600">
+    <Window.Background>
+        <ImageBrush ImageSource="backgrd.png"/>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="label" Content="Search :" HorizontalAlignment="Left" Height="45" Margin="29,210,0,0" VerticalAlignment="Top" Width="221" Foreground="#FF12808B" FontSize="36" FontFamily="Traditional Arabic" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.266"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="213" Margin="257,224,0,0" Height="32
+                  " FontFamily="Traditional Arabic" FontSize="18">
+            <ComboBoxItem>Employees</ComboBoxItem>
+            <ComboBoxItem>ChampionShip</ComboBoxItem>
+            <ComboBoxItem>Coaches</ComboBoxItem>
+            <ComboBoxItem>Club</ComboBoxItem>
+            <ComboBoxItem>Sponsors</ComboBoxItem>
+            <ComboBoxItem>Players</ComboBoxItem>
+            <ComboBoxItem>Team</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="button" Content=""  HorizontalAlignment="Left" Height="68" Margin="463,437,0,0" VerticalAlignment="Top" Width="92" BorderThickness="0" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="search.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="68" Margin="29,435,0,0" VerticalAlignment="Top" Width="98" BorderThickness="0" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="41" Height="34" Margin="16,12,0,0" Click="button2_Click">
+            <Button.BorderBrush>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

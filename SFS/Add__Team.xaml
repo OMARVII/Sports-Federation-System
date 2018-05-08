@@ -5,19 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Add__Team" Height="350" Width="500">
-    <Grid>
+        Title="Add__Team" Height="550" Width="600">
+    <Grid Margin="0,4,0.333,-3.667">
         <Grid.Background>
-            <ImageBrush ImageSource="backgrd.png"/>
+            <ImageBrush ImageSource="new.png"/>
         </Grid.Background>
-        <Label x:Name="label2_Copy11" Content="Team Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,77,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="138"/>
-        <Label x:Name="label2_Copy" Content="Stage:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,112,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="69"/>
-        <Label x:Name="label2_Copy2" Content="Junior" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="243,112,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="78"/>
-        <Label x:Name="label2_Copy3" Content="Senior" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="158,114,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="80"/>
-        <TextBox x:Name="Name" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Margin="140,84,175,0" TextChanged="Name_TextChanged"/>
-        <RadioButton x:Name="Senior" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="138,125,0,0" Height="16" Width="16"/>
-        <RadioButton x:Name="junior" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,126,0,0" Height="16" Width="16" RenderTransformOrigin="0.5,0.25"/>
-        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Height="41" BorderThickness="0" ClickMode="Press" Click="back_Click" Margin="4,275,0,0">
+        <Label x:Name="label2_Copy11" Content="Team Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,171,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="138"/>
+        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="68" BorderThickness="0" ClickMode="Press" Click="back_Click" Margin="25,414,0,0">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -25,7 +19,7 @@
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="416,271,0,-1" Click="button_Click" Height="50" BorderThickness="0,0,0,1">
+        <Button x:Name="button" HorizontalAlignment="Left" Width="86" Margin="470,414,0,27" Click="button_Click" BorderThickness="0,0,0,1" Height="Auto">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -33,6 +27,35 @@
                 <ImageBrush ImageSource="Add.png" TileMode="Tile"/>
             </Button.Background>
         </Button>
-
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Width="30" Height="Auto" Margin="10,11,0,463" RenderTransformOrigin="0.5,0.506" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Label x:Name="label2_Copy1" Content="Coach Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,242,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="152"/>
+        <TextBox x:Name="coach" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Margin="232,242,0,0"/>
+        <ComboBox x:Name="names" HorizontalAlignment="Left" Height="32" Margin="230,177,0,0" VerticalAlignment="Top" Width="205">
+            <ComboBoxItem>Girls11</ComboBoxItem>
+            <ComboBoxItem>Boys11</ComboBoxItem>
+            <ComboBoxItem>Girls12</ComboBoxItem>
+            <ComboBoxItem>Boys12</ComboBoxItem>
+            <ComboBoxItem>Girls13</ComboBoxItem>
+            <ComboBoxItem>Boys13</ComboBoxItem>
+            <ComboBoxItem>Girls14</ComboBoxItem>
+            <ComboBoxItem>Boys14</ComboBoxItem>
+            <ComboBoxItem>Girls15</ComboBoxItem>
+            <ComboBoxItem>Boys15</ComboBoxItem>
+            <ComboBoxItem>Girls16</ComboBoxItem>
+            <ComboBoxItem>Boys16</ComboBoxItem>
+            <ComboBoxItem>Girls17</ComboBoxItem>
+            <ComboBoxItem>Boys17</ComboBoxItem>
+            <ComboBoxItem>Women</ComboBoxItem>
+            <ComboBoxItem>Men</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="label2_Copy" Content="Club Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,315,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="152"/>
+        <TextBox x:Name="club" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" Margin="231,310,0,0"/>
     </Grid>
 </Window>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="SFS.statistics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="statistics" Height="550" Width="600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="new.png"/>
+        </Grid.Background>
+        <ComboBox x:Name="choose" HorizontalAlignment="Left" Height="40" Margin="151,222,0,0" VerticalAlignment="Top" Width="277">
+            <ComboBoxItem>Salaries</ComboBoxItem>
+            <ComboBoxItem>Departments</ComboBoxItem>
+            <ComboBoxItem>Club Results</ComboBoxItem>
+            <ComboBoxItem>Player Results</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Width="108" Margin="459,430,0,10.333" BorderThickness="0" Height="Auto" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Add.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" BorderThickness="0" Click="button1_Click" Margin="20,430,0,0" Height="81">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Statical Options" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="151,131,0,0" Height="62
+               " Width="290" FontSize="35" FontFamily="Traditional Arabic" FontWeight="Bold" RenderTransformOrigin="0.021,1.299"/>
+        <Button x:Name="button3" BorderThickness="0" Content=""  HorizontalAlignment="Right" Width="33" Height="Auto" Margin="0,12,546.333,462.333" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

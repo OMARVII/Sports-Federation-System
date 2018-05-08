@@ -23,5 +23,29 @@ namespace SFS
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            List<Employee> find_Employee = new List<Employee>();
+            if (textBox.Text == "")
+            {
+                MessageBox.Show("Please fill the required information");
+            }
+            for (int i = 0; i < Containers.Employee_list.Count; i++)
+            {
+                if (Containers.Employee_list[i].getId() == textBox.Text)
+                {
+                    find_Employee.Add(Containers.Employee_list[i]);
+                }
+
+            }
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
+        }
     }
 }

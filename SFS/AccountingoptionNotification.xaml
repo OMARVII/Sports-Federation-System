@@ -1,0 +1,34 @@
+﻿<Window x:Class="SFS.AccountingoptionNotification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="AccountingoptionNotification" Height="550" Width="600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="new.png"/>
+        </Grid.Background>
+        <Button x:Name="button" Content="ADD EXPENSE" HorizontalAlignment="Left" Height="51" Margin="135,138,0,0" VerticalAlignment="Top" Width="253" Background="{x:Null}" FontSize="30" Foreground="#FF12808B" BorderThickness="0" Click="button_Click" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="button1" Content="GET MONTH EXPENSES" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395" Margin="87,211,0,0" Height="46" Background="{x:Null}" Foreground="#FF12808B" BorderThickness="0" FontSize="30" Click="button1_Click" RenderTransformOrigin="0.509,-0.455" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Height="81" Margin="447,430,0,0" VerticalAlignment="Top" Width="95" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="next.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button3" Content="" HorizontalAlignment="Left" Height="81" Margin="28,430,0,0" VerticalAlignment="Top" Width="91" BorderThickness="0" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="notification" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="-3,0,0,0" BorderBrush="#FF707070" Foreground="#FF12808B" FontFamily="Traditional Arabic" FontSize="30" Click="notification_Click" FontWeight="Bold" Height="44">
+            <Button.Background>
+                <ImageBrush ImageSource="notification1.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button4" Content="GET YEARLY EXPENSES " HorizontalAlignment="Left" Height="48" Margin="86,274,0,0" VerticalAlignment="Top" Width="398" Background="{x:Null}" FontSize="30" Foreground="#FF12808B" BorderThickness="0" Click="button4_Click" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="button5" Content="LOGOUT" HorizontalAlignment="Left" Height="58" Margin="186,352,0,0" VerticalAlignment="Top" Width="194" Foreground="#FF0C0505" Background="{x:Null}" BorderThickness="0" FontSize="36" Click="button5_Click" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

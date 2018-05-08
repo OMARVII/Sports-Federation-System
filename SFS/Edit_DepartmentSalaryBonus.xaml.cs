@@ -11,7 +11,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Xml;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Drawing;
+using System.Data;
 namespace SFS
 {
     /// <summary>
@@ -19,6 +24,7 @@ namespace SFS
     /// </summary>
     public partial class Edit_DepartmentSalaryBonus : Window
     {
+        public static bool sal = false;
         public Edit_DepartmentSalaryBonus()
         {
             InitializeComponent();
@@ -31,32 +37,77 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (Department.Text == "" || salary.Text == "")
+           
+            if (salary.Text == "")
+            {
                 MessageBox.Show("Please fill the required information !");
+            }
             else
             {
                 for (int i = 0; i < Containers.Employee_list.Count; i++)
                 {
                     if (Containers.Employee_list[i].getId().ToString() == Enter_ID_Employee.employeeeid)
                     {
-                        Containers.Employee_list[i].setDepartment(Department.Text);
-                        Containers.Employee_list[i].setDepartment(salary.Text);
+                        Containers.Employee_list[i].setSalary(float.Parse(salary.Text));
+                        Containers.Employee_list[i].setsalarynot("YES");
                     }
 
                 }
-                MessageBox.Show("Done Changes");
+
+                if (File.Exists("Employees.xml"))
+                {
+                    File.Delete("Employees.xml");
+                }
+
+                for (int i = 0; i < Containers.Employee_list.Count; i++)
+                {
+                    Containers.write_Employee(Containers.Employee_list[i]);
+
+                }
+                if (Enter_ID_Employee.coaach == true)
+                {
+                    for (int i = 0; i < Containers.Coach_list.Count; i++)
+                    {
+                        if (Containers.Coach_list[i].getId().ToString() == Enter_ID_Employee.employeeeid)
+                        {
+                            Containers.Coach_list[i].setSalary(float.Parse(salary.Text));
+                            
+                        }
+
+                    }
+                    if (File.Exists("Coaches.xml"))
+                    {
+                        File.Delete("Coaches.xml");
+                    }
+
+                    for (int i = 0; i < Containers.Coach_list.Count; i++)
+                    {
+                        Containers.write_coach(Containers.Coach_list[i]);
+
+                    }
+                }
+                MessageBox.Show("Changes Done");
             }
+        }
 
 
 
-            }
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+           // this.Hide();
             Edit_Employee ee = new Edit_Employee();
             ee.Show();
+            this.Close();
 
+
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

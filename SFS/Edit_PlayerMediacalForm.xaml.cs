@@ -11,7 +11,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Xml;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Drawing;
+using System.Data;
 namespace SFS
 {
     /// <summary>
@@ -33,15 +38,18 @@ namespace SFS
         {
             Edit_Player ep = new Edit_Player();
             ep.Show();
+            this.Close();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            bool med = false;
+            string med = "NO";
             if (yes.IsChecked == true)
-                med = true;
-            if ((yes.IsChecked == true) && (no.IsChecked == true))
+                med = "YES";
+            if ((yes.IsChecked == false) && (no.IsChecked == false))
+            {
                 MessageBox.Show("Please fill the required information !");
+            }
 
             else
             {
@@ -54,13 +62,30 @@ namespace SFS
                     }
 
                 }
-                MessageBox.Show("Done Changes");
+                if (File.Exists("Players.xml"))
+                {
+                    File.Delete("Players.xml");
+                }
+
+                for (int i = 0; i < Containers.Player_list.Count; i++)
+                {
+                    Containers.write_Player(Containers.Player_list[i]);
+
+                }
+                MessageBox.Show("Changes Done");
+
             }
 
 
+ 
 
-
-            MessageBox.Show("Done Change");
+            
+        }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

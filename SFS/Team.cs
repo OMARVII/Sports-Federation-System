@@ -9,18 +9,28 @@ namespace SFS
     class Team
     {
         string Name;
-        bool senior;
+        string club_name;
+        string coach_name;
+        int result;
+        string senior;
+        int totalresult;
        // List<int>res;
 
         public Team()
         {
             Name = "";
-            senior = false;
+            senior = "";
+            totalresult = 0;
+            club_name = "";
+            coach_name = "";
         }
-        public Team(string N,bool s)
+        public Team(string name,string s,string club,string coach)
         {
-            Name = N;
+            Name = name;
             senior = s;
+            club_name = club;
+            coach_name = coach;
+            totalresult = 0;
         }
 
         public void setTeam(string name)
@@ -33,14 +43,71 @@ namespace SFS
         }
 
 
-        public void setage(bool Senior)
+        public void setage(string Senior)
         {
             this.senior = Senior;
         }
-        public bool getage()
+        public string getage()
         {
             return this.senior;
         }
+        public void setcoachname(string coach_name)
+        {
+            this.coach_name = coach_name;
+        }
+        public string getcoachname()
+        {
+            return this.coach_name;
+        }
+        public void setclubName(string club_name)
+        {
+            this.club_name = club_name;
+        }
+        public string getClubName()
+        {
+            return this.club_name;
+        }
+        public void Setresults(int result)
+        {
+            this.result = result;
+        }
+        public int getresults()
+        {
+            return this.result;
+        }
+        public int Gettotalresults()
+        {
+            return this.totalresult;
+        }
+        public void Settotalresults(int result)
+        {
+            this.totalresult = result;
+        }
+
+        public static Team operator +(Team b, Team c)
+        {
+            Team team = b;
+            team.Settotalresults(b.Gettotalresults() + c.Gettotalresults());
+            return team;
+        }
+        public static bool operator ==(Team b, Team c)
+        {
+            return (b.Gettotalresults() == c.Gettotalresults());
+        }
+        public static bool operator !=(Team b, Team c)
+        {
+            return (b.Gettotalresults() != c.Gettotalresults());
+        }
+        public static bool operator >(Team b, Team c)
+        {
+            return (b.Gettotalresults() > c.Gettotalresults());
+        }
+        public static bool operator <(Team b, Team c)
+        {
+            return (b.Gettotalresults() < c.Gettotalresults());
+        }
+        
+
     }
 }
 

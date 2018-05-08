@@ -8,24 +8,22 @@ namespace SFS
 {
     class Coach : Employee
     {
-        string team;
-       public List<Championships> champlist;
+        int result;
         public Coach()
         {
-            team = "";
-          champlist = new List<Championships>();
+            result = 0;
         }
-        public Coach(string team, int n, string x, bool y, string z, string a, string d, string g, string i, bool m, float s, float b) : base(x, y, z, a, d, g, i, m, s, b)
+        public Coach(string namee, string date, string genderr, string ID, string medical, float sal, float bon, string mob, int workyear, string empdate, string statue, string dep, int Expenses, string accountant,int result, string pass,string salnot,string depnot) : base(namee, date, genderr, ID, medical, sal, bon, mob, workyear, empdate, statue, dep,pass,salnot,depnot)
         {
-            this.team = team;
+            this.result = result;
         }
-        public void setTeam(string team)
+        public void setResult(int result)
         {
-            this.team = team;
+            this.result = result;
         }
-        public string getTeam()
+        public int getResult()
         {
-            return this.team;
+            return this.result;
         }
     }
 }

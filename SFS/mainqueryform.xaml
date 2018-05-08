@@ -5,13 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="mainqueryform" Height="350" Width="500">
+        Title="mainqueryform" Height="550" Width="600">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Label x:Name="label" Content="Choose Field For Desired Query" HorizontalAlignment="Left" Height="49" Margin="0,97,0,0" VerticalAlignment="Top" Width="338" FontSize="22"/>
-        <ComboBox x:Name="QueryOptions" HorizontalAlignment="Left" Height="24" Margin="33,151,0,0" VerticalAlignment="Top" Width="149" Cursor="Arrow" SelectionChanged="QueryOptions_SelectionChanged">
+        <Button x:Name="button3" BorderThickness="0" Content=""  HorizontalAlignment="Right" Width="33" Height="Auto" Margin="0,10,550.333,464.333" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Choose Field For Desired Query" HorizontalAlignment="Left" Height="49" Margin="104,181,0,0" VerticalAlignment="Top" Width="338" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <ComboBox x:Name="QueryOptions" HorizontalAlignment="Left" Height="32" Margin="174,258,0,0" VerticalAlignment="Top" Width="201" Cursor="Arrow" SelectionChanged="QueryOptions_SelectionChanged" FontSize="16" FontFamily="Traditional Arabic">
             <ComboBoxItem>Employee's Salaries</ComboBoxItem>
             <ComboBoxItem>Players In Specific teams</ComboBoxItem>
             <ComboBoxItem>Employee's Age</ComboBoxItem>
@@ -20,25 +25,27 @@
             <ComboBoxItem>Employment date</ComboBoxItem>
             <ComboBoxItem>Coach with highest Score</ComboBoxItem>
             <ComboBoxItem>Best Sponores Deal</ComboBoxItem>
+            <ComboBoxItem>Players Filtration</ComboBoxItem>
+            <ComboBoxItem>Search by championship name</ComboBoxItem>
             <ComboBoxItem>ChampionShips Results</ComboBoxItem>
-            <ComboBoxItem>Champions in Specific Place</ComboBoxItem>
+            <ComboBoxItem>ChampionShips in Specific Place</ComboBoxItem>
             <ComboBoxItem>Teams in Specific ChampionShip</ComboBoxItem>
-            <ComboBoxItem>Championship type</ComboBoxItem>
+            <ComboBoxItem>Championship Type</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="QueryBotton" Content="" HorizontalAlignment="Left" Height="84" Margin="376,225,0,0" VerticalAlignment="Top" Width="96" Click="QueryBotton_Click" IsDefault="False" BorderThickness="0" OpacityMask="Black" ClickMode="Press" Cursor="Arrow">
+        <Button x:Name="QueryBotton" HorizontalAlignment="Left" Height="62" Margin="453,447,0,0" VerticalAlignment="Top" Width="93" Click="QueryBotton_Click" IsDefault="False" BorderThickness="0" OpacityMask="Black" ClickMode="Press" Cursor="Arrow">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="93" BorderThickness="0" ClickMode="Press" Cursor="Arrow">
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Width="88" BorderThickness="0" ClickMode="Press" Cursor="Arrow" Margin="24,443,0,16.333" Click="button_Click" Height="Auto">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
     </Grid>

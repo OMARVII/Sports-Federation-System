@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="playersfiltration" Height="350" Width="500">
+        Title="playersfiltration" Height="550" Width="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="61*"/>
@@ -15,8 +15,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="players" HorizontalAlignment="Left" VerticalAlignment="Top" Height="221" Width="325" Margin="25.333,93,0,0" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Label x:Name="label" Content="Championship Top Players" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="287" Margin="35.333,51,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.ColumnSpan="2">
+        <Label x:Name="label" Content="Championship Top Players" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="287" Margin="32.667,87,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.Column="1">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,16 +25,33 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" RenderTransformOrigin="5.591,11.833" Grid.Column="2" Margin="296.666,261,0,0" Height="49">
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" RenderTransformOrigin="5.591,11.833" Grid.Column="2" Margin="342,419,0,0" Height="72" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="10,261,0,0" Height="49" Grid.ColumnSpan="2">
+        <Button x:Name="button1" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Margin="17,419,0,0" Height="72" Grid.ColumnSpan="2" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-
+        <ListBox x:Name="listBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="215" VerticalAlignment="Top" Width="89" Margin="5.667,222,0,0" Grid.Column="1"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="215" VerticalAlignment="Top" Width="65" Grid.Column="2" Margin="33,222,0,0"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="215" VerticalAlignment="Top" Width="69" Grid.Column="2" Margin="113,222,0,0"/>
+        <ListBox x:Name="listBox3" HorizontalAlignment="Left" Height="215" VerticalAlignment="Top" Width="71" Grid.Column="2" Margin="196,222,0,0"/>
+        <Label x:Name="name" Content="Name" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12.667,189,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="1"/>
+        <Label x:Name="result" Content="Results" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,191,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="2"/>
+        <Label x:Name="age" Content="Age" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,191,292.333,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="2"/>
+        <Label x:Name="gender" Content="Gender" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="196,192,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="2"/>
+        <RadioButton x:Name="male" Content="M" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="294,274,0,0" Height="23" RenderTransformOrigin="1.76,3.423" FontSize="18" FontFamily="Traditional Arabic" FontWeight="Bold" Grid.Column="2"/>
+        <RadioButton x:Name="female" Content="F" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" FontFamily="Traditional Arabic" FontWeight="Bold" Margin="374,277,0,0" Grid.Column="2" RenderTransformOrigin="1.364,0.014"/>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="28" Height="29" Margin="7,4,0,0" Click="button2_Click">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

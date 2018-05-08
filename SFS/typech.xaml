@@ -5,35 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="typech" Height="350" Width="500">
+        Title="typech" Height="550" Width="600">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <ComboBox x:Name="type" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="260,64,0,0" FontSize="18" FontFamily="Traditional Arabic" Height="25">
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
-                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
-                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
-                    <GradientStop Color="#FF0F0C0C" Offset="1"/>
-                </LinearGradientBrush>
-            </ComboBox.Background>
+        <ComboBox x:Name="typee" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="251,72,0,0" FontSize="18" FontFamily="Traditional Arabic" Height="32">
             <ComboBoxItem Content="OFFICIAL"/>
             <ComboBoxItem Content="NON-OFFICIAL"/>
         </ComboBox>
-        <Label x:Name="label" Content="Type Of Championship:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="251" Margin="4,56,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic"/>
-        <DataGrid x:Name="type1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="206" Width="281" Margin="105,102,0,0"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="404,257,0,0" Height="51">
+        <Label x:Name="label" Content="Type Of Championship:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="251" Margin="0,67,0,0" FontSize="22" FontWeight="Bold" FontFamily="Traditional Arabic"/>
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="478,446,0,0" Height="65" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="12,257,0,0" Height="51">
+        <Button x:Name="button1" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" Margin="22,446,0,0" Height="65" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="96" Margin="88,155,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="75" Margin="184,155,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="95" Margin="259,155,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <Label x:Name="place" Content="Place" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,123,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="type" Content="Type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="99,118,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="name" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,123,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <ListBox x:Name="listBox3" HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="54" Margin="359,155,0,0" FontSize="13" FontFamily="Traditional Arabic"/>
+        <Label x:Name="age" Content="Age" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="359,124,0,0" FontSize="15" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="button3" BorderThickness="0" Content="" Height="Auto" Margin="0,10,553.6,472.8" Click="button3_Click" HorizontalAlignment="Right" Width="30" RenderTransformOrigin="0.073,0.6">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

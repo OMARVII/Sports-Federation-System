@@ -5,15 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Options" Height="350" Width="500">
+        Title="Options" Height="400" Width="500">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="178*"/>
+            <ColumnDefinition Width="147*"/>
+            <ColumnDefinition Width="167*"/>
+        </Grid.ColumnDefinitions>
+
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Button x:Name="button" Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="157,82,0,0" BorderBrush="#FF707070" Background="{x:Null}" Foreground="#FF12808B" FontFamily="Traditional Arabic" FontSize="30" Click="button_Click"/>
-        <Button x:Name="button1" Content="EDIT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="131" Margin="158,144,0,0" FontFamily="Traditional Arabic" FontSize="30" Background="{x:Null}" Foreground="#FF12808B" Click="button1_Click"/>
-        <Button x:Name="button2" Content="DELETE" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="133" Margin="158,0,0,60" Foreground="#FF12808B" Background="{x:Null}" FontSize="30" FontFamily="Traditional Arabic" Click="button2_Click"/>
+        <Button x:Name="button" BorderThickness="0" Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="19,94,0,0" BorderBrush="#FF707070" Background="{x:Null}" Foreground="#FF12808B" FontFamily="Traditional Arabic" FontSize="30" Click="button_Click" FontWeight="Bold" Height="67"/>
+        <Button x:Name="button1" BorderThickness="0" Content="EDIT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="6,83,0,0" FontFamily="Traditional Arabic" FontSize="30" Background="{x:Null}" Foreground="#FF12808B" Click="button1_Click" FontWeight="Bold" Height="81" Grid.Column="2"/>
+        <Button x:Name="button2" BorderThickness="0" Content="DELETE" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="160" Margin="167,0,0,277" Foreground="#FF12808B" Background="{x:Null}" FontSize="30" FontFamily="Traditional Arabic" Click="button2_Click" FontWeight="Bold" Height="60" Grid.ColumnSpan="3"/>
+        <Button x:Name="button3" Content="" HorizontalAlignment="Left" Height="65" VerticalAlignment="Top" Width="91" BorderThickness="0" Click="button3_Click" RenderTransformOrigin="0.583,0.933" Margin="16.44,296,0,0" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button4" Content="QUERIES" HorizontalAlignment="Left" Height="62" Margin="3,181,0,0" VerticalAlignment="Top" Width="154" BorderThickness="0" Click="button4_Click" FontSize="30" FontFamily="Traditional Arabic" FontWeight="Bold" Foreground="#FF12808B" Grid.Column="2">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button6" Content="DISPLAY" HorizontalAlignment="Left" Height="61" Margin="167,137,0,0" VerticalAlignment="Top" Width="173" BorderThickness="0" Click="button6_Click" FontSize="30" FontFamily="Traditional Arabic" FontWeight="Bold" Foreground="#FF12808B" Grid.ColumnSpan="3">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button5" BorderThickness="0" Content="SEARCH" HorizontalAlignment="Left" VerticalAlignment="Top" Width="178" Margin="7,183,0,0" FontSize="30" FontFamily="Traditional Arabic" Foreground="#FF12808B" FontWeight="Bold" Height="58" Click="button5_Click_1" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button7" BorderThickness="0" Content="LOGOUT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="178" Margin="163,239,0,0" FontWeight="Bold" Foreground="#DD171717" FontSize="30" FontFamily="Traditional Arabic" Height="55" Click="button7_Click" Grid.ColumnSpan="3">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

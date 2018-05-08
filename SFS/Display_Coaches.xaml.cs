@@ -26,8 +26,84 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Search_coach z = new Search_coach();
-            z.Show();
+            bool check = false;
+            for (int i = 0; i < Containers.Coach_list.Count; i++)
+            {
+                if(Containers.Coach_list[i].getId()==textBox.Text)
+                {
+                    check = true;
+                    break;
+                }
+            }
+                if (textBox.Text == "")
+            {
+                MessageBox.Show("Please fill the required information !");
+            }
+              else if(check == false)
+            {
+                MessageBox.Show("Wrong ID !");
+            }
+            else
+            {
+                List<string> name = new List<string>();
+                List<int> results = new List<int>();
+                for (int i = 0; i < Containers.Coach_list.Count; i++)
+                {
+                    if (Containers.Coach_list[i].getId() == textBox.Text)
+                    {
+                        name.Add(Containers.Coach_list[i].getName());
+                        results.Add(Containers.Coach_list[i].getResult());
+                    }
+                }
+                listBox.ItemsSource = results;
+                listBox_Copy.ItemsSource = name;
+            }
+        }
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> name = new List<string>();
+            List<int> results = new List<int>();
+            for (int i = 0; i < Containers.Coach_list.Count; i++)
+            {
+                    name.Add(Containers.Coach_list[i].getName());
+                    results.Add(Containers.Coach_list[i].getResult());
+               
+            }
+            listBox.ItemsSource = results;
+            listBox_Copy.ItemsSource = name;
+        }
+    
+
+
+
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (adminoptions.disp == true)
+            {
+                displayOptions z = new displayOptions();
+                z.Show();
+                this.Close();
+            }
+            else
+            {
+                searchoptions so = new searchoptions();
+                so.Show();
+                this.Close();
+            }
+
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

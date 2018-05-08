@@ -5,25 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Edit_DepartmentSalaryBonus" Height="350" Width="500">
+        Title="Edit_DepartmentSalaryBonus" Height="550" Width="600">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <TextBox x:Name="Department" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="150,85,0,0"/>
-        <TextBox x:Name="salary" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="152,124,0,0" TextChanged="textBox1_TextChanged"/>
-        <Label x:Name="label2_Copy11" Content="Department:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,77,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy" Content="Salary:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,111,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="54" Margin="332,282,0,0" Height="36" Click="button1_Click">
+        <TextBox x:Name="salary" HorizontalAlignment="Left" Height="32" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Margin="240,201,0,0" TextChanged="textBox1_TextChanged"/>
+        <Label x:Name="label2_Copy" Content="Salary:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="119,204,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" BorderThickness="0" VerticalAlignment="Top" Width="93" Margin="487,438,0,0" Height="76" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="Edit2.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="58" Height="46" Margin="-2,272,0,0" Click="button_Copy_Click">
+        <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" BorderThickness="0" VerticalAlignment="Top" Width="93" Height="73" Margin="15,436,0,0" Click="button_Copy_Click">
             <Button.Background>
-                <ImageBrush ImageSource="back1.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" BorderThickness="0" VerticalAlignment="Top" Width="54" Height="47" Margin="4,2,0,0" Click="button2_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

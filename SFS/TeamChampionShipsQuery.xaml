@@ -5,31 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="TeamChampionShipsQuery" Height="350" Width="500">
+        Title="TeamChampionShipsQuery" Height="550" Width="600">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Label x:Name="label" Content="Enter ChampionShip Name " HorizontalAlignment="Left" Height="59" Margin="43,88,0,0" VerticalAlignment="Top" Width="347" FontSize="22"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="33" Margin="83,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="232" FontSize="20"/>
-        <Label x:Name="label1" Content="Enter ChampionShip Place" HorizontalAlignment="Left" Height="43" Margin="43,203,0,0" VerticalAlignment="Top" Width="272" FontSize="22"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="42" Margin="83,251,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="232" FontSize="20"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="100" Margin="367,219,0,0" VerticalAlignment="Top" Width="125" Click="button_Click" BorderThickness="0" ClickMode="Press">
+        <Label x:Name="label" Content="Enter Championship Name " HorizontalAlignment="Left" Height="59" Margin="57,160,0,0" VerticalAlignment="Top" Width="408" FontSize="30" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <TextBox x:Name="textBox"  HorizontalAlignment="Left" Height="32" Margin="135,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" FontSize="16" FontFamily="Traditional Arabic"/>
+        <Label x:Name="label1" Content="Enter Championship Place" HorizontalAlignment="Left" Height="43" Margin="57,287,0,0" VerticalAlignment="Top" Width="390" FontSize="30" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <ComboBox x:Name="places" HorizontalAlignment="Left" VerticalAlignment="Top" Width="232" Margin="135,355,0,0" FontSize="18" FontFamily="Traditional Arabic" Height="32" FontWeight="Bold">
+            <ComboBoxItem Content="Cairo" FontWeight="Bold"/>
+            <ComboBoxItem Content="Alex" FontWeight="Bold"/>
+            <ComboBoxItem Content="Giza" FontWeight="Bold"/>
+            <ComboBoxItem Content="Menya" FontWeight="Bold"/>
+        </ComboBox>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="85" Margin="486,426,0,0" VerticalAlignment="Top" Width="82" Click="button_Click" BorderThickness="0" ClickMode="Press">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="83" VerticalAlignment="Top" Width="99" ClickMode="Press" Click="button1_Click">
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="85" VerticalAlignment="Top" Width="80" ClickMode="Press" Click="button1_Click" Margin="19,426,0,0">
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
             <Button.BorderBrush>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.BorderBrush>
         </Button>
-
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="30" Height="Auto" Margin="0,25,494.333,513.333" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

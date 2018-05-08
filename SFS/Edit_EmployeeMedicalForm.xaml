@@ -5,20 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Edit_EmployeeMedicalForm" Height="350" Width="500">
+        Title="Edit_EmployeeMedicalForm" Height="550" Width="600">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Label x:Name="label2_Copy3" Content="Medical Form:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,118,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="180"/>
-        <RadioButton x:Name="yes" Content="Yes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="223,128,0,0" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
-        <RadioButton x:Name="no" Content="No" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="315,128,0,0" Checked="radioButton1_Checked" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="12,263,0,0" Click="button_Click" Height="57">
+        <Label x:Name="label2_Copy3" Content="Medical Form:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,213,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Height="43" Width="180"/>
+        <RadioButton x:Name="yes" Content="Yes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,215,0,0" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <RadioButton x:Name="no" Content="No" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,214,0,0" Checked="radioButton1_Checked" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="button" BorderThickness="0" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="14,430,0,0" Click="button_Click" Height="73">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="374,244,0,0" Click="button1_Click" Height="71">
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="49" Height="Auto" Margin="0,4,538,471" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" BorderThickness="0" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="488,434,0,0" Click="button1_Click" Height="76">
             <Button.Background>
                 <ImageBrush ImageSource="Edit2.png"/>
             </Button.Background>

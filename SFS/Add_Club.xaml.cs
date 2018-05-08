@@ -34,89 +34,92 @@ namespace SFS
         {
             Add_Options cccc = new Add_Options();
             cccc.Show();
+            this.Close();
         }
 
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            int x = 0;
-            string st =x.ToString();
-            if (Name.Text == "" || starting.Text=="")
+            
+            if (Name.Text == "" || starting.Text == "")
             {
                 MessageBox.Show("Please fill the required information !");
             }
-
-           else  if (!File.Exists("Clubs.xml"))
-            {
-                XmlTextWriter document = new XmlTextWriter("Clubs.xml", Encoding.UTF8);
-
-                document.Formatting = Formatting.Indented;
-                document.WriteStartDocument();
-                document.WriteStartElement("Clubs");
-                document.WriteStartElement("Club");
-
-                document.WriteStartElement("Club_Name");
-                document.WriteString(Name.Text);
-                document.WriteEndElement();
-
-                document.WriteStartElement("Starting_Date");
-                document.WriteString(starting.Text);
-                document.WriteEndElement();
-
-                document.WriteStartElement("Club_Teams");
-                document.WriteString(st);
-                document.WriteEndElement();
-
-                document.WriteStartElement("Club_Championships");
-                document.WriteString(st);
-                document.WriteEndElement();
-
-                document.WriteStartElement("Club_Sponsors");
-                document.WriteString(st);
-                document.WriteEndElement();
-
-                document.WriteEndElement();
-                document.WriteEndElement();
-                document.WriteEndDocument();
-
-                document.Close();
-
-                MessageBox.Show("Club Successfuly Added.");
-            }
             else
-
             {
-                XmlDocument doc = new XmlDocument();
-                doc.Load("Clubs.xml");
+                bool found = false;
 
-                XmlNode clubss = doc.CreateElement("Club");
+                for (int i = 0; i < Containers.Club_list.Count; i++)
+                {
+                    if (Name.Text == Containers.Club_list[i].getClubName())
+                    {
+                        found = true;
+                    }
+                }
+                if (found == true)
+                {
+                    MessageBox.Show("Club Already Exists !");
+                }
+                else
+                {
+                    Club c = new Club(Name.Text, starting.Text);
+                    Containers.Club_list.Add(c);
+                    if (!File.Exists("Clubs.xml"))
+                    {
+                        XmlTextWriter document = new XmlTextWriter("Clubs.xml", Encoding.UTF8);
 
-                XmlNode club_Name = doc.CreateElement("Club_Name");
-                club_Name.InnerText = Name.Text;
-                clubss.AppendChild(club_Name);
+                        document.Formatting = Formatting.Indented;
+                        document.WriteStartDocument();
+                        document.WriteStartElement("Clubs");
+                        document.WriteStartElement("Club");
 
-                XmlNode Starting = doc.CreateElement("starting_Date");
-                Starting.InnerText = starting.Text;
-                clubss.AppendChild(Starting);
+                        document.WriteStartElement("Club_Name");
+                        document.WriteString(Name.Text);
+                        document.WriteEndElement();
 
-                XmlNode Clubteams = doc.CreateElement("Club_Teams");
-                Clubteams.InnerText = st;
-                clubss.AppendChild(Clubteams);
+                        document.WriteStartElement("Starting_Date");
+                        document.WriteString(starting.Text);
+                        document.WriteEndElement();
 
-                XmlNode champion = doc.CreateElement("Club_Championships");
-                champion.InnerText = st;
-                clubss.AppendChild(champion);
+                        document.WriteEndElement();
+                        document.WriteEndElement();
+                        document.WriteEndDocument();
 
-                XmlNode sponsor = doc.CreateElement("Club_Sponsors");
-                sponsor.InnerText = st;
-                clubss.AppendChild(sponsor);
+                        document.Close();
 
-                doc.DocumentElement.AppendChild(clubss);
-                doc.Save("Clubs.xml");
+                        MessageBox.Show("Club Successfuly Added.");
+                    }
+                    else
 
-                MessageBox.Show("Club Successfuly Added.");
+                    {
+                        XmlDocument doc = new XmlDocument();
+                        doc.Load("Clubs.xml");
+
+                        XmlNode clubss = doc.CreateElement("Club");
+
+                        XmlNode club_Name = doc.CreateElement("Club_Name");
+                        club_Name.InnerText = Name.Text;
+                        clubss.AppendChild(club_Name);
+
+                        XmlNode Starting = doc.CreateElement("starting_Date");
+                        Starting.InnerText = starting.Text;
+                        clubss.AppendChild(Starting);
+
+                        doc.DocumentElement.AppendChild(clubss);
+                        doc.Save("Clubs.xml");
+
+                        MessageBox.Show("Club Successfuly Added.");
+                    }
+                }
             }
-           
+        }
+
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            adminoptions a = new adminoptions();
+            a.Show();
+            this.Close();
         }
     }
 }

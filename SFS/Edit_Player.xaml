@@ -5,28 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Edit_Player" Height="350" Width="500">
+        Title="Edit_Player" Height="550" Width="600">
     <Grid Margin="4,0,2,3">
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="-1,268,0,0" Height="48" Click="button4_Click">
+        <Button x:Name="back" BorderThickness="0" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="9,429,0,0" Height="73" Click="button4_Click">
             <Button.Background>
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <ComboBox x:Name="choose" Margin="98,92,177,199" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem>Mobile_Number</ComboBoxItem>
-            <ComboBoxItem>Medical_Form</ComboBoxItem>
-            <ComboBoxItem>Salary</ComboBoxItem>
-            <ComboBoxItem>Team_Name</ComboBoxItem>
-        </ComboBox>
-        <Button x:Name="next" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Margin="415,268,0,0" Click="button1_Click" Height="48" BorderThickness="0">
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="53" Height="Auto" Margin="-1,2,534,462" Click="button3_Click">
             <Button.Background>
-                <ImageBrush ImageSource="next1.png"/>
+                <ImageBrush ImageSource="wrongg.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="label2_Copy11" Content="Change:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,84,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Foreground="#FF34A5B0"/>
+        <ComboBox x:Name="choose" Margin="202,209,176,276" Height="32" SelectionChanged="ComboBox_SelectionChanged" FontSize="16" FontFamily="Traditional Arabic" >
+            <ComboBoxItem>Mobile_Number</ComboBoxItem>
+            <ComboBoxItem>Medical_Form</ComboBoxItem>
+            <ComboBoxItem>Club_Name</ComboBoxItem>
+            <ComboBoxItem>Results</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="next" Content="" HorizontalAlignment="Left" Width="93" Margin="485,429,0,15" Click="button1_Click" BorderThickness="0" Height="Auto">
+            <Button.Background>
+                <ImageBrush ImageSource="next.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label2_Copy11" Content="Change:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="85,210,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Foreground="#FF34A5B0"/>
 
     </Grid>
 </Window>

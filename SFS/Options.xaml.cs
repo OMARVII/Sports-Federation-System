@@ -21,30 +21,69 @@ namespace SFS
     {
         public Options()
         {
-            InitializeComponent();
+          InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Add_Options ao = new Add_Options();
             ao.Show();
+            this.Close();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Edit_Delete ed = new Edit_Delete();
+            Enter_ID ed = new Enter_ID();
             ed.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            Edit_Delete ed = new Edit_Delete();
+            Enter_ID ed = new Enter_ID();
             ed.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Loginas lgn = new Loginas();
+            lgn.Show();
+            this.Close();
+        }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            mainqueryform mq = new mainqueryform();
+            mq.Show();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void button6_Click(object sender, RoutedEventArgs e)
+        {
+            displayOptions dp = new displayOptions();
+            dp.Show();
+            this.Close();
+
+        }
+
+        private void button5_Click_1(object sender, RoutedEventArgs e)
+        {
+            searchoptions os = new searchoptions();
+            os.Show();
+            this.Close();
+        }
+
+        private void button7_Click(object sender, RoutedEventArgs e)
+        {
+            Loginas lgn = new Loginas();
+            lgn.Show();
+            this.Close();
         }
     }
 }

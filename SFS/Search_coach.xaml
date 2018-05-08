@@ -5,18 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Search_coach" Height="350" Width="500">
+        Title="Search_coach" Height="550" Width="600">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Label x:Name="label" Content="Enter ID:" HorizontalAlignment="Left" Margin="78,135,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="36" Margin="213,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" FontSize="16" TextChanged="textBox_TextChanged"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="374,245,0,0" VerticalAlignment="Top" Width="100" Height="66">
+        <Label x:Name="label" Content="Enter ID:" HorizontalAlignment="Left" Margin="54,135,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold" Width="125"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="32" Margin="213,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" FontSize="16" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" Margin="456,415,0,0" VerticalAlignment="Top" Width="115" Height="82" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="search.png"/>
             </Button.Background>
         </Button>
-
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="85" Height="Auto" Margin="0,10,498.6,455.8" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

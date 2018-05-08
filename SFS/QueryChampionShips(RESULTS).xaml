@@ -5,32 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="QueryChampionShips_RESULTS_" Height="350" Width="500"
+        Title="QueryChampionShips_RESULTS_" Height="550" Width="600"
         >
-    <Grid Margin="0,0,0,-1">
+    <Grid Margin="0,0,0,-3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Label x:Name="label" Content="ChampionShip Results" HorizontalAlignment="Left" Height="65" Margin="101,63,0,0" VerticalAlignment="Top" Width="245" FontSize="22"/>
-        <RadioButton x:Name="Max_res" Content="Maximum Score" HorizontalAlignment="Left" Height="31" Margin="0,118,0,0" VerticalAlignment="Top" Width="233" FontSize="22" RenderTransformOrigin="0.502,-0.097"/>
-        <RadioButton x:Name="Min_Res" Content="Minimum Score" HorizontalAlignment="Left" Height="34" Margin="283,118,0,0" VerticalAlignment="Top" Width="199" FontSize="22"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="96" Margin="365,219,0,0" VerticalAlignment="Top" Width="117" FontSize="22" Click="button_Click">
+        <Label x:Name="label" Content="ChampionShip Results" HorizontalAlignment="Left" Height="45" Margin="100,59,0,0" VerticalAlignment="Top" Width="245" FontSize="24" Grid.Column="1" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <RadioButton x:Name="Max_res" Content="Club With Maximum Score" HorizontalAlignment="Left" Height="31" Margin="136,292,0,0" VerticalAlignment="Top" Width="295" FontSize="22" RenderTransformOrigin="0.502,-0.097" Grid.Column="1" FontFamily="Traditional Arabic"/>
+        <RadioButton x:Name="Min_Res" Content="Club With Minimum Score" HorizontalAlignment="Left" Height="34" Margin="136,230,0,0" VerticalAlignment="Top" Width="305" FontSize="22" Grid.Column="1" FontFamily="Traditional Arabic"/>
+        <Button x:Name="button" Content=""  BorderThickness="0" HorizontalAlignment="Left" Height="74" Margin="467,425,0,0" VerticalAlignment="Top" Width="106" FontSize="22" Click="button_Click" Grid.Column="1">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <DataGrid x:Name="ResultsDataGrid" HorizontalAlignment="Left" Height="137" Margin="10,154,0,0" VerticalAlignment="Top" Width="215"/>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="71" VerticalAlignment="Top" Width="96" Click="button1_Click">
+        <Button x:Name="button1" Content="" BorderThickness="0" HorizontalAlignment="Left" Height="71" VerticalAlignment="Top" Width="96" Click="button1_Click" Margin="23,428,0,0" Grid.ColumnSpan="2">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-
+        <Label x:Name="label1" Content="Enter ChampionShip Name :" HorizontalAlignment="Left" Height="39" Margin="10,152,0,0" VerticalAlignment="Top" Width="319" FontSize="22" Grid.Column="1" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="40" Margin="334,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="24" Grid.Column="1" FontFamily="Traditional Arabic"/>
+        <Button x:Name="button2" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" Height="24" Margin="3,0,0,0" VerticalAlignment="Top" Width="29" BorderThickness="0" Click="button2_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

@@ -11,6 +11,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Drawing;
+using System.Data;
 
 namespace SFS
 {
@@ -26,31 +32,48 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (choose.Text == "Mobile_Number")
+            if (choose.Text == "")
             {
-                Edit_MobileNumberEmployee ee = new Edit_MobileNumberEmployee();
-                ee.Show();
+                MessageBox.Show("Please choose an option!");
             }
-          
-            else if (choose.Text == "Salary")
+            else
             {
-                Edit_DepartmentSalaryBonus z = new Edit_DepartmentSalaryBonus();
-                z.Show();
-            }
-            else if (choose.Text == "Bonus")
-            {
-                Edit_DepartmentSalaryBonus z = new Edit_DepartmentSalaryBonus();
-                z.Show();
-            }
-            else if (choose.Text == "Department")
-            {
-                Edit_DepartmentSalaryBonus z = new Edit_DepartmentSalaryBonus();
-                z.Show();
-            }
-            else if (choose.Text == "Avaliable")
-            {
-                Edit_Avaliable g = new Edit_Avaliable();
-                g.Show();
+                if (choose.Text == "Mobile_Number")
+                {
+                    Edit_MobileNumberEmployee ee = new Edit_MobileNumberEmployee();
+                    ee.Show();
+                    this.Close();
+                }
+                else if (choose.Text == "Salary")
+                {
+                    Edit_DepartmentSalaryBonus z = new Edit_DepartmentSalaryBonus();
+                    z.Show();
+                    this.Close();
+                }
+                else if (choose.Text == "MedicalForm")
+                {
+                    Edit_EmployeeMedicalForm nnnn = new Edit_EmployeeMedicalForm();
+                    nnnn.Show();
+                    this.Close();
+                }
+                else if (choose.Text == "Bonus")
+                {
+                    Edit_Bonus eb = new Edit_Bonus();
+                    eb.Show();
+                    this.Close();
+                }
+                else if (choose.Text == "Department")
+                {
+                    Edit_Department z = new Edit_Department();
+                    z.Show();
+                    this.Close();
+                }
+                else if (choose.Text == "Avaliable")
+                {
+                    Edit_Avaliable g = new Edit_Avaliable();
+                    g.Show();
+                    this.Close();
+                }
             }
         }
 
@@ -63,6 +86,13 @@ namespace SFS
         {
             Enter_ID_Employee eie = new Enter_ID_Employee();
             eie.Show();
+            this.Close();
+        }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

@@ -1,0 +1,36 @@
+﻿<Window x:Class="SFS.Edit_Optionss"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        mc:Ignorable="d"
+        Title="Edit_Optionss" Height="550" Width="600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="new.png"/>
+        </Grid.Background>
+        <ComboBox x:Name="co" Margin="227,194,139,294" Height="32" FontSize="16" FontFamily="Traditional Arabic" >
+            <ComboBoxItem>Employee</ComboBoxItem>
+            <ComboBoxItem>Player</ComboBoxItem>
+
+        </ComboBox>
+        <Label x:Name="label2_Copy11" Content="Edit/Delete:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,191,0,0" FontFamily="Traditional Arabic" FontSize="26" FontWeight="Bold" Foreground="#FF34A5B0"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="494,439,0,0" BorderThickness="0" Click="button_Click" Height="73">
+            <Button.Background>
+                <ImageBrush ImageSource="next.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="9,435,0,0" BorderThickness="0" Click="button1_Click" Height="74">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="36" Height="34" BorderThickness="0" Click="button2_Click" Margin="6,0,0,481">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

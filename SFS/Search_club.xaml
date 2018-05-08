@@ -5,18 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Search_club" Height="350" Width="500">
+        Title="Search_club" Height="550" Width="600">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Label x:Name="label" Content="Enter Name:&#xD;&#xA;" HorizontalAlignment="Left" Margin="83,153,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="160" Margin="259,166,0,0" FontSize="16" TextChanged="textBox_TextChanged"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" Margin="384,253,0,0" Height="58">
+        <Label x:Name="label" Content="Enter Name:&#xD;&#xA;" HorizontalAlignment="Left" Margin="47,156,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold" Width="159"/>
+        <TextBox x:Name="textBox" TextAlignment="Center" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Margin="259,156,0,0" FontSize="16" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="461,421,0,0" Height="72" Click="button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="search.png"/>
             </Button.Background>
         </Button>
-
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="79" Height="Auto" Margin="0,14,502.6,449.8" Click="button3_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.624"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1.23"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

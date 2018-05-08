@@ -5,27 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="PlayersInEachTeamQuery" Height="350" Width="500">
-    <Grid Margin="0,0,0,4">
+        Title="PlayersInEachTeamQuery" Height="550" Width="600">
+    <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Label x:Name="label" Content="Enter Team Name " HorizontalAlignment="Left" Height="51" Margin="10,80,0,0" VerticalAlignment="Top" Width="213" FontSize="22"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="28" Margin="33,149,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="149"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="103" Margin="381,202,0,0" VerticalAlignment="Top" Width="101" Click="button_Click">
+        <Label x:Name="label" Content="Enter Team Name :" HorizontalAlignment="Left" Height="51" Margin="10,205,0,0" VerticalAlignment="Top" Width="228" FontSize="24" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <ComboBox x:Name="names" HorizontalAlignment="Left" Height="32" Margin="276,204,0,0" VerticalAlignment="Top" Width="205">
+            <ComboBoxItem>Girls11</ComboBoxItem>
+            <ComboBoxItem>Boys11</ComboBoxItem>
+            <ComboBoxItem>Girls12</ComboBoxItem>
+            <ComboBoxItem>Boys12</ComboBoxItem>
+            <ComboBoxItem>Girls13</ComboBoxItem>
+            <ComboBoxItem>Boys13</ComboBoxItem>
+            <ComboBoxItem>Girls14</ComboBoxItem>
+            <ComboBoxItem>Boys14</ComboBoxItem>
+            <ComboBoxItem>Girls15</ComboBoxItem>
+            <ComboBoxItem>Boys15</ComboBoxItem>
+            <ComboBoxItem>Girls16</ComboBoxItem>
+            <ComboBoxItem>Boys16</ComboBoxItem>
+            <ComboBoxItem>Girls17</ComboBoxItem>
+            <ComboBoxItem>Boys17</ComboBoxItem>
+            <ComboBoxItem>Women</ComboBoxItem>
+            <ComboBoxItem>Men</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="button" Content="" BorderThickness="0" HorizontalAlignment="Left" Height="74" Margin="440,435,0,0" VerticalAlignment="Top" Width="106" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="65" VerticalAlignment="Top" Width="91" Click="button1_Click">
+        <Button x:Name="button1" Content="" BorderThickness="0" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="103" Click="button1_Click" Margin="26,435,0,0">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Height="Auto" Width="43" RenderTransformOrigin="0.655,1.019" BorderThickness="0" Margin="17,-20,0,504.333" Click="button2_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
             </Button.Background>
         </Button>
 

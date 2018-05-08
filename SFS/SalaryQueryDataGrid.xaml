@@ -5,19 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="SalaryQueryDataGrid" Height="350" Width="500"
+        Title="SalaryQueryDataGrid" Height="550" Width="600"
         >
-    <Grid Margin="0,0,0,-129">
+    <Grid Margin="0,0,0,-1">
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <DataGrid x:Name="SalaryQueryDG" HorizontalAlignment="Left" Height="248" Margin="10,110,0,0" VerticalAlignment="Top" Width="284"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="86" Click="button_Click">
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="86" Click="button_Click" Margin="28,426,0,0">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="238" Margin="38,151,0,0" VerticalAlignment="Top" Width="126"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="238" Margin="169,151,0,0" VerticalAlignment="Top" Width="138"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="238" Margin="312,151,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="72" Margin="476,426,0,0" VerticalAlignment="Top" Width="85" BorderThickness="0" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="view.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Name" HorizontalAlignment="Left" Height="30" Margin="66,116,0,0" VerticalAlignment="Top" Width="88" FontSize="18" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Department" HorizontalAlignment="Left" Height="30" Margin="180,116,0,0" VerticalAlignment="Top" Width="112" FontSize="18" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Label x:Name="label2" Content="Salary" HorizontalAlignment="Left" Height="34" Margin="329,118,0,0" VerticalAlignment="Top" Width="94" FontSize="18" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="38" BorderThickness="0" Click="button2_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
             </Button.Background>
         </Button>
 

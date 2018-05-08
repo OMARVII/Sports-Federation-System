@@ -42,27 +42,30 @@ namespace SFS
         private void button1_Click(object sender, RoutedEventArgs e)
         {
            
-             if (choose.Text == "Salary")
-            {
-                Edit_SalaryBonus z = new Edit_SalaryBonus();
-                z.Show();
-            }
-            else if (choose.Text == "Team_Name")
+             if (choose.Text == "Club_Name")
             {
                 Edit_TeamName z = new Edit_TeamName();
                 z.Show();
+                this.Close();
             }
             else if (choose.Text == "Mobile_Number")
             {
                 Edit_PlayerMobileNumber z = new Edit_PlayerMobileNumber();
                 z.Show();
+                this.Close();
             }
             else if (choose.Text == "Medical_Form")
             {
                 Edit_PlayerMediacalForm z = new Edit_PlayerMediacalForm();
                 z.Show();
+                this.Close();
             }
-            
+            else if (choose.Text == "Results")
+            {
+                Add_PlayerResults z = new Add_PlayerResults();
+                z.Show();
+                this.Close();
+            }
 
         }
 
@@ -70,6 +73,13 @@ namespace SFS
         {
             Enter_ID ei = new Enter_ID();
             ei.Show();
+            this.Close();
+        }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

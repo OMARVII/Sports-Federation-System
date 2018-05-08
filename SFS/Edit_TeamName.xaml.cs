@@ -11,6 +11,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Drawing;
+using System.Data;
 
 namespace SFS
 {
@@ -36,17 +42,58 @@ namespace SFS
 
             else
             {
-                for (int i = 0; i < Containers.Player_list.Count; i++)
+                bool clubbl = false;
+                for (int i = 0; i < Containers.Club_list.Count; i++)
                 {
-                    if (Containers.Player_list[i].getId().ToString() == Enter_ID.playerid)
+                    if (Teamname.Text == Containers.Club_list[i].getClubName())
                     {
-
-                        Containers.Player_list[i].set_teamname(Teamname.Text);
+                        clubbl = true;
                     }
+
                 }
-                MessageBox.Show("Done Changes");
+                if (clubbl == false)
+                {
+                    MessageBox.Show("Club doesn't exist ! ");
+                }
+                else
+                {
+                    for (int i = 0; i < Containers.Player_list.Count; i++)
+                    {
+                        if (Containers.Player_list[i].getId().ToString() == Enter_ID.playerid)
+                        {
+
+                            Containers.Player_list[i].setclubName(Teamname.Text);
+                        }
+                    }
+                    if (File.Exists("Players.xml"))
+                    {
+                        File.Delete("Players.xml");
+                    }
+
+                    for (int i = 0; i < Containers.Player_list.Count; i++)
+                    {
+                        Containers.write_Player(Containers.Player_list[i]);
+
+                    }
+                    MessageBox.Show("Changes Done");
+
+
+                }
             }
 
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Edit_Player p = new Edit_Player();
+            p.Show();
+            this.Close();
+        }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
+            this.Close();
         }
     }
 }

@@ -5,24 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Add_Player" Height="400" Width="500">
+        Title="Add_Player" Height="600" Width="600">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="backgrd.png"/>
+            <ImageBrush ImageSource="new.png"/>
         </Grid.Background>
-        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Margin="189,30,0,0">
-            <TextBox.Background>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBox x:Name="Number" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Margin="190,171,0,0"/>
-        <TextBox x:Name="Salary" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Margin="189,134,0,0"/>
-        <TextBox x:Name="team_name" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Margin="189,248,0,0"/>
-        <RadioButton GroupName="Medical Form" Name="yes" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="171,111,0,0" Checked="yes_Checked"/>
-        <RadioButton GroupName="Medical Form" Name="no" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="287,107,0,0"/>
-        <RadioButton GroupName="Gender" Name="male" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="289,74,0,0"/>
-        <RadioButton GroupName="Gender" Name="female" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,74,0,0" RenderTransformOrigin="7.021,0.125"/>
-        <Button x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="415,320,0,0" Click="button_Click" Height="50" BorderThickness="0,0,0,1">
+        <TextBox x:Name="Number" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="230,239,0,0" FontSize="16" FontFamily="Traditional Arabic" TextChanged="Number_TextChanged"/>
+        <ComboBox x:Name="names" HorizontalAlignment="Left" Height="32" Margin="230,347,0,0" VerticalAlignment="Top" Width="180">
+            <ComboBoxItem>Girls11</ComboBoxItem>
+            <ComboBoxItem>Boys11</ComboBoxItem>
+            <ComboBoxItem>Girls12</ComboBoxItem>
+            <ComboBoxItem>Boys12</ComboBoxItem>
+            <ComboBoxItem>Girls13</ComboBoxItem>
+            <ComboBoxItem>Boys13</ComboBoxItem>
+            <ComboBoxItem>Girls14</ComboBoxItem>
+            <ComboBoxItem>Boys14</ComboBoxItem>
+            <ComboBoxItem>Girls15</ComboBoxItem>
+            <ComboBoxItem>Boys15</ComboBoxItem>
+            <ComboBoxItem>Girls16</ComboBoxItem>
+            <ComboBoxItem>Boys16</ComboBoxItem>
+            <ComboBoxItem>Girls17</ComboBoxItem>
+            <ComboBoxItem>Boys17</ComboBoxItem>
+            <ComboBoxItem>Women</ComboBoxItem>
+            <ComboBoxItem>Men</ComboBoxItem>
+        </ComboBox>
+        <RadioButton GroupName="Medical Form" Name="yes" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="216,193,0,0" Checked="yes_Checked"/>
+        <RadioButton GroupName="Medical Form" Name="no" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="311,193,0,0"/>
+        <RadioButton GroupName="Gender" Name="male" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="309,145,0,0"/>
+        <RadioButton GroupName="Gender" Name="female" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="214,146,0,0" RenderTransformOrigin="7.021,0.125"/>
+        <Button x:Name="button" Margin="488,485,0,23.333" Click="button_Click" BorderThickness="0,0,0,1" HorizontalAlignment="Left" Width="75" Height="Auto">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -30,7 +41,7 @@
                 <ImageBrush ImageSource="Add.png" TileMode="Tile"/>
             </Button.Background>
         </Button>
-        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Height="41" BorderThickness="0" ClickMode="Press" Click="back_Click" Margin="1,330,0,-1">
+        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Height="63" BorderThickness="0" ClickMode="Press" Click="back_Click" Margin="10,485,0,0">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -38,18 +49,27 @@
                 <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="label2_Copy10" Content="Player Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,19,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy2" Content="Gender:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,61,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy4" Content="Female" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,60,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy3" Content="Male" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="304,62,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy" Content="Medical Form:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,94,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Width="154"/>
-        <Label x:Name="label2_Copy8" Content="Salary:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,128,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy6" Content="Yes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,98,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy7" Content="No" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="306,95,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy11" Content="Mobile Number:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,164,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy12" Content="Date of birth :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,203,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="label2_Copy13" Content="Team Name :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,239,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
-        <DatePicker x:Name="Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,210,0,0" Width="144" Height="26"/>
+        <Label x:Name="label2_Copy10" Content="Player Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,82,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy2" Content="Gender:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,129,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy4" Content="F" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="247,133,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy3" Content="M" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="340,131,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy" Content="Medical Form:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,179,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Width="154"/>
+        <Label x:Name="label2_Copy6" Content="Yes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="247,181,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy7" Content="No" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="340,183,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" RenderTransformOrigin="0.64,0.602"/>
+        <Label x:Name="label2_Copy11" Content="Mobile Number:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,229,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy12" Content="Date of birth :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,287,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy13" Content="Team Name :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,338,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold"/>
+        <DatePicker x:Name="Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,294,0,0" Width="180" Height="33"/>
+        <TextBox x:Name="coach" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="230,387,0,0" FontSize="16" FontFamily="Traditional Arabic"/>
+        <Label x:Name="label2_Copy1" Content="Coach Name :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,383,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Width="155"/>
+        <TextBox x:Name="player_name" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Margin="229,85,0,0" FontSize="16" FontFamily="Traditional Arabic"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Width="30" Height="Auto" BorderThickness="0" Margin="0,4,0,533.333" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label2_Copy5" Content="Club Name :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,436,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Width="155"/>
+        <TextBox x:Name="club" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Margin="224,436,0,0" TextChanged="textBox_TextChanged"/>
 
     </Grid>
 </Window>

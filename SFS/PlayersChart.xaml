@@ -1,0 +1,40 @@
+﻿<Window x:Class="SFS.PlayersChart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        d:DesignHeight="600" d:DesignWidth="800"
+        Title="reschart" Height="620" Width="800">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Margin="10,-2,340.333,22" FontWeight="Medium" FontSize="38" Grid.Row="0"><Run Text="                            Players "/><LineBreak/></TextBlock>
+        <lvc:CartesianChart Name="MainChart" Grid.Row="1" Margin="0,3,10.333,10.333" Loaded="MainChart_Loaded">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis Title="Players" Name="HorizontalAxis" FontWeight="Bold" FontSize="20"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="Results" FontWeight="Bold" FontSize="20"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="1,456,0,0" Grid.Row="1" BorderThickness="0" Height="50" RenderTransformOrigin="0.311,0.405" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button3" BorderThickness="0" Content=""  HorizontalAlignment="Right" Width="31" Height="Auto" Margin="0,14,754.333,31" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="GO !" HorizontalAlignment="Left" Margin="513,46,0,0" VerticalAlignment="Top" Width="66" Background="White" Foreground="#DD111010" BorderBrush="White" Height="31" Click="button1_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="32" Margin="352,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" FontFamily="Traditional Arabic" FontSize="16"/>
+        <Label x:Name="label" Content="Championship Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="174,46,0,0" Width="173" FontSize="16" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

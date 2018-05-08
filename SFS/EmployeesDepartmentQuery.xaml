@@ -5,27 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="EmployeesDepartmentQuery" Height="350" Width="500">
-    <Grid>
+        Title="EmployeesDepartmentQuery" Height="550" Width="600">
+    <Grid Margin="0,0,0.333,0.333">
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/backgr.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Label x:Name="label" Content="Enter Department Name" HorizontalAlignment="Left" Height="46" Margin="10,97,0,0" VerticalAlignment="Top" Width="183" FontSize="22"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="36" Margin="10,161,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="170" FontSize="16"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="103" Margin="378,216,0,0" VerticalAlignment="Top" Width="114" BorderThickness="0" Click="button_Click">
-            <Button.BorderBrush>
-                <ImageBrush/>
-            </Button.BorderBrush>
+        <Button x:Name="button3" BorderThickness="0" Content="" HorizontalAlignment="Right" Width="30" Height="Auto" Margin="0,10,547,465" Click="button3_Click" RenderTransformOrigin="-1.876,0.732">
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/Query.png"/>
+                <ImageBrush ImageSource="wrongg.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="99">
+        <Label x:Name="label" Content="Enter Department Name" HorizontalAlignment="Left" Height="46" Margin="138,177,0,0" VerticalAlignment="Top" Width="275" FontSize="22" FontFamily="Traditional Arabic" FontWeight="Bold"/>
+        <ComboBox x:Name="Department" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Margin="191,249,0,0" FontSize="16" FontFamily="Traditional Arabic" >
+            <ComboBoxItem Content="HR"/>
+            <ComboBoxItem Content="Coach"/>
+            <ComboBoxItem Content="Accounting"/>
+        </ComboBox>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="87" Margin="451,410,0,0" VerticalAlignment="Top" Width="114" BorderThickness="0" Click="button_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\Documents\GitHub\New folder\Sports-Federation-System\SFS\images/bk.png"/>
+                <ImageBrush ImageSource="questionM.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="87" VerticalAlignment="Top" Width="114" Margin="10,410,0,0" Click="button1_Click">
+            <Button.BorderBrush>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
 

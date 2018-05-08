@@ -1,0 +1,36 @@
+﻿<Window x:Class="SFS.departmentstat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFS"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        d:DesignHeight="620" d:DesignWidth="800"
+        Title="ChartDemo" Height="620" Width="800">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Margin="10" FontWeight="Medium" FontSize="34" Grid.Row="0" Text="             People working In Each Department "/>
+        <lvc:CartesianChart Name="dep" Grid.Row="1" Margin="5" Loaded="dep_Loaded">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis Title="Departments" Name="horizontalAxis" FontWeight="Bold" FontSize="20"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="Average Employees" FontWeight="Bold" FontSize="20"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="0,462,0,0" Grid.Row="1" BorderThickness="0" Height="42" RenderTransformOrigin="0.311,0.405" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button3" BorderThickness="0" Content=""  HorizontalAlignment="Right" Width="26" Height="Auto" Margin="0,12,753.333,36" Click="button3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="wrongg.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

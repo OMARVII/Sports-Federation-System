@@ -19,6 +19,7 @@ namespace SFS
     /// </summary>
     public partial class EmployeesDepartmentQuery : Window
     {
+        public static string dep = "";
         public EmployeesDepartmentQuery()
         {
             InitializeComponent();
@@ -26,8 +27,30 @@ namespace SFS
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            EmployeesDepartmentDataG edg = new EmployeesDepartmentDataG();
-            edg.Show();
+            if (Department.Text == "")
+            {
+                MessageBox.Show("Choose An Option !");
+            }
+            else
+            {
+                dep = Department.Text;
+                EmployeesDepartmentDataG edg = new EmployeesDepartmentDataG();
+                edg.Show();
+                this.Close();
+            }
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            mainqueryform mq = new mainqueryform();
+            mq.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            adminoptions o = new adminoptions();
+            o.Show();
             this.Close();
         }
     }
